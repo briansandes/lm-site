@@ -115,15 +115,24 @@
             display: none;
         }
 
+        #mainNavbar {
+            position: relative;
+            height: calc(100vh - 75px) !important;
 
-        .container,
-        .container-fluid,
-        .container-lg,
-        .container-md,
-        .container-sm,
-        .container-xl,
-        .container-xxl {
-            padding-inline: 24px;
+            .navbar-nav {
+                position: absolute;
+                bottom: 20px;
+                right: 0;
+
+                li {
+                    text-align: right;
+
+                    a {
+                        font-size: 48px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
         }
 
         .hero {
