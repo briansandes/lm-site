@@ -1,0 +1,125 @@
+    body {
+        font-family: 'Nunito', Arial, sans-serif;
+        color: #000;
+        background-color: #fff;
+    }
+
+    .navbar {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+
+        min-height: 100vh;
+        background: url("../img/gorivaldo-right-150-o.png") no-repeat;
+        background-size: contain;
+        background-position: center right;
+
+        /* 🎯 filter only on background */
+        filter: grayscale(100%) brightness(40%) contrast(50%);
+
+        /* optional opacity */
+        opacity: 0.4;
+
+        z-index: 1;
+    }
+
+    .hero-overlay {
+        background: rgba(255, 255, 255, 0.85);
+        padding: 60px 40px;
+        border-radius: 12px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-weight: 900;
+    }
+
+    .highlight {
+        color: #c70000;
+    }
+
+    .section-light {
+        background-color: #f9f9f9;
+    }
+
+    .cta-btn {
+        background-color: #c70000;
+        color: #fff;
+        font-weight: 700;
+        padding: 15px 30px;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+
+    .cta-btn:hover {
+        background-color: #a80000;
+        color: #fff;
+    }
+
+    .box {
+        border: 1px solid #eee;
+        border-radius: 12px;
+        padding: 30px;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    footer {
+        background-color: #f2f2f2;
+        padding: 40px 0;
+        font-size: 14px;
+    }
+
+
+    /* landing page styles */
+    section.hero {
+        .container {
+            position: relative;
+            z-index: 10;
+        }
+        
+        h1.title {
+            text-transform: uppercase;
+        }
+
+        .price-cta {
+            text-transform: uppercase;
+        }
+
+        ul.bullet-list {
+            list-style: none;
+            padding: 0;
+        }
+    }
+
+    .hero-ebook-cover {
+        padding: 8px;
+        background: #dddddd;
+    }
+
+    .btn-hero-cta {
+        border-radius: 0;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 16px 32px;
+    }
+
+
+    /* mobile */
+    @media screen and (max-width: 991px) {
+        
+    }
