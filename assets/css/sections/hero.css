@@ -1,0 +1,39 @@
+section.hero {
+    color: white;
+    height: 100vh;
+    display: flex;
+
+    .v-centered-container {
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        width: 100%;
+    }
+
+    h2.title {
+        font-size: 6rem;
+        text-shadow: -4px 4px 0px black;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-shadow: -2px 2px 0px black;   
+    }
+
+    .cta {
+        border-radius: 0;
+        font-size: 1.5rem;
+        box-shadow: -4px 4px 0px black;
+        text-transform: uppercase;
+
+        &.cta-learn-more {
+            background-color: white;
+        }
+
+        &.cta-purchase {
+            margin-left: 16px;
+            background-color: #ffa500;
+        }
+    }
+}

@@ -13,10 +13,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
     rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
 
+  <link href="assets/css/loader.css" rel="stylesheet" />
   <link href="assets/css/styles.css" rel="stylesheet" />
   <style>
   </style>
@@ -76,57 +76,60 @@
     </nav>
   </header>
 
-
-  <section class="section-hero">
-    <div id="gorivaldo-professor"></div>
-  </section>
-
   <main>
-    <!-- HERO -->
-    <article>
-      <section class="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="card">
+    <div class="main-loader" id="main-loader">
+      <div class="hero-logo-holder">
+        <h1 class="hero-logo">
+          LÓGICA MACAQUISTA
+        </h1>
+        <p class="hero-logo-sub" id="hero-logo-sub">
+          apresenta
+        </p>
+      </div>
+    </div>
+
+    <div class="main-content-holder">
+      <!-- HERO -->
+      <article>
+        <section class="hero lm-dark-bg">
+          <div class="v-centered-container hero-content" id="hero-content">
+            <div class="v-centered-content">
+              <div class="container">
                 <div class="row">
-                  <div class="col-md-6 col-feature">
-                    <div class="feature-holder">
-                      <div class="background">
-                        <img src="assets/img/hero-gorivaldo.png" class="img-fluid hero-img"
-                          alt="Finanças Descomplicadas | Lógica Macaquista"
-                          title="Finanças Descomplicadas | Lógica Macaquista" />
-                        <div class="ebook-cover-holder">
-                          <img src="assets/img/ebook-cover.webp" class="img-fluid ebook-cover"
-                            alt="Finanças Descomplicadas | Lógica Macaquista"
-                            title="Finanças Descomplicadas | Lógica Macaquista" />
+
+                  <div class="col-md-6 col-text">
+                    <div class="content-holder">
+                      <div class="title-holder">
+                        <h2 class="title staatliches-regular">
+                          Finanças Descomplicadas
+                        </h2>
+                      </div>
+                      <div class="text-holder">
+                        <div class="text">
+                          <p>
+                            Aprenda finanças de forma simples,<br>
+                            direta e sem linguagem complicada
+                          </p>
+
+                          <p>
+                            Entenda como o dinheiro funciona na prática sem nunca ter estudado economia.
+                          </p>
+                          <p>
+                            Todos 5 ebooks de educação financeira
+                          </p>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-text">
-                    <div class="text-holder">
-                      <span class="offer badge text-bg-danger">super oferta</span>
-                      <h1 class="title">
-                        Finanças Descomplicadas
-                      </h1>
-                      <div class="price">
-                        <ins aria-label="Preço promocional"><data value="47.90">R$ 47,90</data></ins>
-                        <del aria-label="Preço original">R$ 129,90</del>
-                      </div>
-                      <p class="price-card">
-                        6x de R$ 8,82 no cartão
-                      </p>
-                      <p>
-                        Todos 5 ebooks de educação financeira
-                      </p>
                       <div class="cta-holder">
-                        <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=hero_cta"
-                          target="_blank" class="btn btn-warning cta">
-                          COMPRAR BOX COMPLETO
+                        <a href="#saiba-mais" class="btn btn-light cta cta-learn-more">
+                          Saiba mais
+                        </a>
+                        <a href="#" class="btn btn-info cta cta-purchase">
+                          Comprar o box de ebooks
                         </a>
                       </div>
-                      <div class="extra-info">
+
+
+                      <div class="extra-info d-none">
                         <aside>
                           <ul class="product-tags">
                             <li class="product-tags-item">
@@ -148,7 +151,7 @@
                         </aside>
                       </div>
 
-                      <div class="features-holder">
+                      <div class="features-holder d-none">
                         <ul class="features">
                           <li>
                             💰 Garantia de 7 dias
@@ -160,16 +163,30 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="col-md-6 col-feature">
+                    <div class="feature-holder">
+                      <div class="background">
+                        <img src="assets/img/landing-page-gorivaldo.png" class="img-fluid hero-img"
+                          alt="Finanças Descomplicadas | Lógica Macaquista"
+                          title="Finanças Descomplicadas | Lógica Macaquista" />
+                        <div class="ebook-cover-holder">
+                          <img src="assets/img/ebook-cover.webp" class="img-fluid ebook-cover d-none"
+                            alt="Finanças Descomplicadas | Lógica Macaquista"
+                            title="Finanças Descomplicadas | Lógica Macaquista" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+      </article>
+    </div>
 
-        </div>
-      </section>
-    </article>
-
-    <section class="intro-section">
+    <section class="intro-section d-none" id="saiba-mais">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -177,7 +194,7 @@
           </div>
           <div class="col-md-6">
             <h2 class="section-title">
-            Gorivaldo e Finanças Descomplicadas
+              Gorivaldo e Finanças Descomplicadas
             </h2>
             <p class="fs-5">
               Na <strong>Macacolândia</strong> trocando folhas por bananas,
@@ -192,7 +209,7 @@
     </section>
 
 
-    <section class="section section-gray">
+    <section class="section section-gray d-none">
       <div class="container">
 
         <!-- ROW 1 -->
@@ -207,7 +224,7 @@
           </div>
 
           <div class="col-lg-6 text-center">
-            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Controle financeiro">
+            <!-- <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Controle financeiro"> -->
           </div>
         </div>
 
@@ -224,7 +241,7 @@
           </div>
 
           <div class="col-lg-6 text-center">
-            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Fim das dívidas">
+            <!--<img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Fim das dívidas">-->
           </div>
         </div>
 
@@ -241,7 +258,7 @@
           </div>
 
           <div class="col-lg-6 text-center">
-            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Reserva de emergência">
+            <!-- <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Reserva de emergência"> -->
           </div>
         </div>
 
@@ -258,7 +275,7 @@
           </div>
 
           <div class="col-lg-6 text-center">
-            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Investimentos">
+            <!-- <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Investimentos"> -->
           </div>
         </div>
 
@@ -274,7 +291,7 @@
           </div>
 
           <div class="col-lg-6 text-center">
-            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Mentalidade financeira">
+            <!--<img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Mentalidade financeira">-->
           </div>
         </div>
 
@@ -284,7 +301,7 @@
 
 
     <!-- FAQ -->
-    <section class="section-light py-5" id="faq">
+    <section class="section-light py-5 d-none" id="faq">
       <div class="container">
         <h2 class="text-center mb-4">Perguntas Frequentes</h2>
 
@@ -319,7 +336,7 @@
     </section>
   </main>
   <!-- FOOTER -->
-  <footer>
+  <footer class="d-none">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -341,7 +358,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="assets/js/loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
