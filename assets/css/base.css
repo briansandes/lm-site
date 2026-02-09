@@ -1,0 +1,41 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lm-dark-bg {
+    background-color: var(--primary-bg-color);
+}
+
+.hero-logo-holder {
+    text-align: center;
+    color: white;
+
+    .hero-logo {
+        font-size: 2.5rem;
+
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: -2px 2px 0px black;
+    }
+
+    .hero-logo-sub {
+        font-family: "Marck Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        text-shadow: -2px 2px 0px black;
+    }
+}

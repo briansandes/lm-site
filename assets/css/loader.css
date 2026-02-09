@@ -1,0 +1,78 @@
+body {
+    overflow: hidden;
+}
+
+.hero-content {
+    opacity: 0;
+    transition: opacity .8s ease;
+
+    h2,
+    p,
+    a {
+        transition: all .8s ease;
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    h2 {
+        transition-delay: 400ms;
+    }
+
+    p {
+        transition-delay: 8000ms;
+    }
+
+    a {
+        transition-delay: 12000ms;
+    }
+
+    &.loaded {
+        opacity: 1;
+
+        h2,
+        p,
+        a {
+            transition: all .8s ease;
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}
+
+.main-loader {
+    position: fixed;
+    top: 40vh;
+    width: 100%;
+    z-index: 9999;
+    transition: all .8s ease;
+
+    .hero-logo-holder {
+        h1.hero-logo {
+            font-size: 5rem;
+            transition: all .8s ease;
+        }
+
+        .hero-logo-sub {
+            font-size: 4rem;
+            opacity: 0;
+            transition: all .8s ease;
+        }
+    }
+
+
+
+    &.loaded {
+        top: 32px;
+
+        .hero-logo-holder {
+            .hero-logo {
+                font-size: 2.5rem;
+            }
+
+            .hero-logo-sub {
+                font-size: 2rem;
+                opacity: 1;
+            }
+        }
+    }
+}
