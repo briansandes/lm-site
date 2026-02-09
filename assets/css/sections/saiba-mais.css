@@ -1,0 +1,14 @@
+section.saiba-mais {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .section-title {
+        font-size: 3rem;
+        border-bottom: solid 2px #cccccc;
+        margin-bottom: 32px;
+    }
+
+    .section-text {
+        max-width: 600px;
+    }
+}

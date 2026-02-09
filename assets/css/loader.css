@@ -1,6 +1,21 @@
 body {
     overflow: hidden;
+
+    &.loaded {
+
+        section.saiba-mais,
+        section.o-ebook {
+            display: block;
+        }
+    }
 }
+
+/* hiding sections */
+.saiba-mais,
+.o-ebook {
+    display: none;
+}
+
 
 .hero-content {
     opacity: 0;
@@ -8,7 +23,8 @@ body {
 
     h2,
     p,
-    a {
+    a,
+    img {
         transition: all .8s ease;
         opacity: 0;
         transform: translateY(60px);
@@ -19,7 +35,8 @@ body {
 
         h2,
         p,
-        a {
+        a,
+        img {
             transition: all .8s ease;
             opacity: 1;
             transform: translateY(0px);
