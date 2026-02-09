@@ -7,6 +7,7 @@ function introAnimation() {
     console.log('calling timeout');
     // After slide finishes, fade intro and reveal content
     setTimeout(() => {
+        document.body.classList.add('loaded');
         document.getElementById("hero-content").classList.add('loaded');
         console.log('called callback');
         document.body.style.overflow = "auto";
