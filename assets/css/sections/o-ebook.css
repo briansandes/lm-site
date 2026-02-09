@@ -4,6 +4,14 @@
     background-color: #fff920;
     color: black;
     text-shadow: none;
+    position: relative;
+
+    .gorivaldo-professor {
+        position: absolute;
+        max-width: 500px;
+        top: 30%;
+        left: 0;
+    }
 
     .section-title {
         font-size: 3rem;
@@ -29,6 +37,7 @@
 
             &:nth-child(odd) {
                 padding-left: 80px;
+
                 .item-content {
                     transform: translateX(-80px);
                 }
@@ -36,6 +45,7 @@
 
             &:nth-child(even) {
                 padding-right: 80px;
+
                 .item-content {
                     transform: translateX(80px);
                 }

@@ -14,12 +14,34 @@ body {
     font-style: normal;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Staatliches", sans-serif;
 }
 
 .lm-dark-bg {
     background-color: var(--primary-bg-color);
+}
+
+.tilt {
+    display: inline-block;
+    animation: tiltAnim 1s steps(1) infinite;
+}
+
+@keyframes tiltAnim {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
 }
 
 .hero-logo-holder {
