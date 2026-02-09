@@ -10,7 +10,7 @@ function introAnimation() {
         document.getElementById("hero-content").classList.add('loaded');
         console.log('called callback');
         document.body.style.overflow = "auto";
-    }, 1200);
+    }, 800);
 }
 
 const start = Date.now();
@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
     console.log('added event');
 
     const elapsed = Date.now() - start;
-    const delay = Math.max(1200 - elapsed, 0);
+    const delay = Math.max(800 - elapsed, 0);
 
     setTimeout(() => {
         document.getElementById('hero-logo-sub').style.opacity = '1';

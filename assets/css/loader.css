@@ -14,18 +14,6 @@ body {
         transform: translateY(60px);
     }
 
-    h2 {
-        transition-delay: 400ms;
-    }
-
-    p {
-        transition-delay: 8000ms;
-    }
-
-    a {
-        transition-delay: 12000ms;
-    }
-
     &.loaded {
         opacity: 1;
 
@@ -40,7 +28,7 @@ body {
 }
 
 .main-loader {
-    position: fixed;
+    position: absolute;
     top: 40vh;
     width: 100%;
     z-index: 9999;
