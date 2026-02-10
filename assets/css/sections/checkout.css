@@ -1,0 +1,128 @@
+.checkout {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #036363;
+
+    .section-title {
+        font-size: 4rem;
+        border-bottom: solid 2px #cccccc;
+        margin-bottom: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: 990px;
+        text-align: center;
+        color: white;
+        text-shadow: -4px 4px 0 black;
+    }
+
+    .card {
+        border-radius: 0;
+        box-shadow: -8px 8px 0 black;
+        border: none;
+    }
+
+    .background {
+        background-color: #399595;
+
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        .hero-img {
+            border-radius: 0;
+        }
+
+        .ebook-cover-holder {
+            display: none;
+        }
+    }
+
+    .text-holder {
+        padding: 16px;
+
+        .offer {
+            margin-bottom: 8px;
+            font-family: "Staatliches", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .price {
+            text-decoration: none;
+            vertical-align: top;
+
+            ins {
+                text-decoration: none;
+                color: #35dc45;
+                font-weight: bold;
+                font-size: 32px;
+            }
+
+            del {
+                color: #969696;
+                vertical-align: top;
+                font-weight: bold;
+                padding-top: 8px;
+                display: inline-block;
+            }
+        }
+
+        .price-card {
+        }
+
+        .cta-holder {
+            margin-bottom: 16px;
+
+            .cta {
+                border-radius: 0;
+                font-size: 1.5rem;
+                box-shadow: -4px 4px 0px black;
+                text-transform: uppercase;
+                padding: 8px 16px;
+            }
+        }
+
+        .product-tags {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: inline-block;
+
+                .badge {
+                    border: solid 1px #bebebe;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+        }
+    }
+}
+
+
+    /* mobile */
+    @media screen and (max-width: 991px) {
+        .checkout {
+            .background {
+                background-color: #399595;
+
+                .hero-img {
+                    max-width: 160px;
+                    display: inline-block;
+                }
+
+                .ebook-cover-holder {
+                    display: inline-block;
+                    width: 100px;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+    /* non mobile */
+    @media screen and (min-width: 992px) {}
