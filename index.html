@@ -13,8 +13,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=block"
     rel="stylesheet">
+
+  <!-- basic css -->
+  <style>
+    :root {
+      --primary-bg-color: #399595;
+      /* global scope */
+    }
+
+    body {
+      background: var(--primary-bg-color);
+    }
+  </style>
 
   <link href="assets/css/loader.css" rel="stylesheet" />
   <link href="assets/css/styles.css" rel="stylesheet" />
@@ -183,7 +195,7 @@
             </div>
           </div>
           <div class="bananas-hero-holder">
-            <img src="assets/img/bananas-hero.png" class="bananas-hero" />
+            <img src="assets/img/bananas-hero.webp" class="bananas-hero" />
           </div>
         </section>
       </article>
@@ -334,7 +346,7 @@
                 Lógica Macaquista
               </h3>
               <div class="text-holder">
-                <p class="fs-5">
+                <p class="section-text">
                   A Lógica Macaquista nasceu com o objetivo de explicar temas
                   importantes da vida real de forma simples, leve e até divertida.<br />
                   Nosso foco é transformar assuntos que normalmente
@@ -343,7 +355,7 @@
                   em conhecimento prático que qualquer pessoa
                   consiga entender e aplicar no dia a dia.
                 </p>
-                <p class="fs-5">
+                <p class="section-text">
                   Acreditamos que organizar o dinheiro não precisa ser caro,
                   chato ou inacessível. Com ferramentas práticas,
                   exemplos claros e uma abordagem acessível,
@@ -546,8 +558,42 @@
       </div>
     </div>
   </footer>
-  <script src="assets/js/loader.js"></script>
+  <!-- 10th feb. 2026 moved loader to index file -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function introAnimation() {
+      const loader = document.getElementById("main-loader");
+
+      // Slide text upward
+      loader.classList.add('loaded');
+
+      console.log('calling timeout');
+      // After slide finishes, fade intro and reveal content
+      setTimeout(() => {
+        document.body.classList.add('loaded');
+        document.getElementById("hero-content").classList.add('loaded');
+        console.log('called callback');
+        document.body.style.overflow = "auto";
+      }, 800);
+    }
+
+    const start = Date.now();
+
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+      console.log('scrolled to top');
+      console.log('added event');
+
+      const elapsed = Date.now() - start;
+      const delay = Math.max(800 - elapsed, 0);
+
+      setTimeout(() => {
+        document.getElementById('hero-logo-sub').style.opacity = '1';
+      }, 200);
+
+      setTimeout(introAnimation, delay);
+    });
+  </script>
 </body>
 
 </html>
