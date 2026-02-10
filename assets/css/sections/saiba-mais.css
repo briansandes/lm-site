@@ -11,4 +11,45 @@ section.saiba-mais {
     .section-text {
         max-width: 600px;
     }
+
+    .mobile-gorivaldo {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 991px) {
+    section.saiba-mais {
+
+        .section-title {
+            vertical-align: top;
+            text-align: left;
+            font-size: 2rem;
+        }
+
+        .mobile-gorivaldo {
+            display: inline-block;
+            vertical-align: top;
+            height: 110px;
+            margin-right: 18px;
+            float: left;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .section-title-holder {
+            vertical-align: top;
+            text-align: right;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section.saiba-mais {
+        .mobile-gorivaldo {
+            display: none;
+        }
+    }
 }

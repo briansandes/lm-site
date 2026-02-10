@@ -28,7 +28,8 @@ section.checkout {
     h2,
     p,
     a,
-    img {
+    img,
+    .bananas-hero-holder {
         transition: all .8s ease;
         opacity: 0;
         transform: translateY(60px);
@@ -40,7 +41,8 @@ section.checkout {
         h2,
         p,
         a,
-        img {
+        img,
+        .bananas-hero-holder {
             transition: all .8s ease;
             opacity: 1;
             transform: translateY(0px);
