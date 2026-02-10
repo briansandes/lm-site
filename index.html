@@ -23,61 +23,59 @@
       /* global scope */
     }
 
+    /* ----------------- */
+    /* base css */
     body {
-      background: var(--primary-bg-color);
-    }
-
-    body {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+      font-variation-settings:
         "wdth" 100;
-}
-
-
-.staatliches-regular {
-    font-family: "Staatliches", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Staatliches", sans-serif;
-}
-
-.lm-dark-bg {
-    background-color: var(--primary-bg-color);
-}
-
-.tilt {
-    display: inline-block;
-    animation: tiltAnim 1s steps(1) infinite;
-}
-
-@keyframes tiltAnim {
-    0% {
-        transform: rotate(-15deg);
     }
 
-    50% {
+
+    .staatliches-regular {
+      font-family: "Staatliches", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Staatliches", sans-serif;
+    }
+
+    .lm-dark-bg {
+      background-color: var(--primary-bg-color);
+    }
+
+    .tilt {
+      display: inline-block;
+      animation: tiltAnim 1s steps(1) infinite;
+    }
+
+    @keyframes tiltAnim {
+      0% {
+        transform: rotate(-15deg);
+      }
+
+      50% {
         transform: rotate(15deg);
-    }
+      }
 
-    100% {
+      100% {
         transform: rotate(-15deg);
+      }
     }
-}
 
-.hero-logo-holder {
-    text-align: center;
-    color: white;
+    .hero-logo-holder {
+      text-align: center;
+      color: white;
 
-    .hero-logo {
+      .hero-logo {
         font-size: 2.5rem;
 
         font-family: "Staatliches", sans-serif;
@@ -85,29 +83,32 @@ h4 {
         font-style: normal;
         text-shadow: -2px 2px 0px black;
         margin-bottom: 0;
-    }
+      }
 
-    .hero-logo-sub {
+      .hero-logo-sub {
         font-family: "Marck Script", cursive;
         font-weight: 400;
         font-style: normal;
         font-size: 2rem;
         line-height: 2rem;
         text-shadow: -2px 2px 0px black;
+      }
     }
-}
 
 
-/* mobile */
-@media screen and (max-width: 991px) {
-    .hide-mobile {
+    /* mobile */
+    @media screen and (max-width: 991px) {
+      .hide-mobile {
         display: none;
+      }
     }
-}
 
-/* non mobile */
-@media screen and (min-width: 992px) {
-}
+    /* non mobile */
+    @media screen and (min-width: 992px) {}
+
+
+    /* ------------------------- */
+    /* loader.css */
 
     body {
       overflow: hidden;
@@ -159,9 +160,26 @@ h4 {
       p,
       a,
       img {
-        transition: all .8s ease;
+        transition: all .6s ease;
         opacity: 0;
         transform: translateY(60px);
+        transition-property: transform;
+      }
+
+      h2 {
+        transition-delay: 100ms !important;
+      }
+
+      p {
+        transition-delay: 300ms !important;
+      }
+
+      a {
+        transition-delay: 500ms !important;
+      }
+
+      img {
+        transition-delay: 700ms !important;
       }
 
       &.loaded {
@@ -252,30 +270,33 @@ h4 {
       }
     }
 
-    section.hero {
-    color: white;
-    height: 100vh;
-    display: flex;
 
-    .v-centered-container {
+    /* hero css --------------------------------*/
+
+    section.hero {
+      color: white;
+      height: 100vh;
+      display: flex;
+
+      .v-centered-container {
         height: 100vh;
         display: grid;
         align-items: center;
         width: 100%;
-    }
+      }
 
-    h2.title {
+      h2.title {
         font-size: 6rem;
         text-shadow: -4px 4px 0px black;
-    }
+      }
 
-    .text {
+      .text {
         font-size: 1.5rem;
         line-height: 1.8rem;
         text-shadow: -2px 2px 0px black;
-    }
+      }
 
-    .cta {
+      .cta {
         border-radius: 0;
         font-size: 1.5rem;
         box-shadow: -4px 4px 0px black;
@@ -283,65 +304,66 @@ h4 {
         padding: 8px 16px;
 
         &.cta-learn-more {
-            background-color: white;
-            border: none;
+          background-color: white;
+          border: none;
         }
 
         &.cta-purchase {
-            margin-left: 16px;
-            background-color: #ffa500;
-            border: none;
+          margin-left: 16px;
+          background-color: #ffa500;
+          border: none;
         }
-    }
+      }
 
-    .bananas-hero-holder {
+      .bananas-hero-holder {
         display: none;
+      }
     }
-}
 
 
-/* mobile */
-@media screen and (max-width: 991px) {
-    section.hero {
+    /* mobile */
+    @media screen and (max-width: 991px) {
+      section.hero {
         .hero-content {
-            position: relative;
-            z-index: 10;
+          position: relative;
+          z-index: 10;
         }
 
         .content-holder {
-            padding-top: 70px;
+          padding-top: 70px;
         }
 
         h2.title {
-            font-size: 3rem;
-            line-height: 3.5rem;
+          font-size: 3rem;
+          line-height: 3.5rem;
         }
 
         p {
-            font-size: 1rem;
-            line-height: 1.2rem;
+          font-size: 1rem;
+          line-height: 1.2rem;
         }
 
         .cta-holder {
-            margin-bottom: 32px;
+          margin-bottom: 32px;
         }
+
         .cta {
-            font-size: 0.8rem;
+          font-size: 0.8rem;
         }
 
         .bananas-hero-holder {
-            display: block;
-            position: absolute;
-            bottom: -100px;
-            width: 100%;
-            z-index: 5;
+          display: block;
+          position: absolute;
+          bottom: -100px;
+          width: 100%;
+          z-index: 5;
 
-            .bananas-hero {
-                max-width: 100%;
-            }
+          .bananas-hero {
+            max-width: 100%;
+          }
         }
+      }
     }
-}
   </style>
   <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
@@ -400,7 +422,7 @@ h4 {
   </header>
 
   <main>
-    <div class="main-loader" id="main-loader">
+    <div class="main-loader" id="main-loader" style="display: none;">
       <div class="hero-logo-holder">
         <h1 class="hero-logo">
           LÓGICA MACAQUISTA
@@ -451,40 +473,6 @@ h4 {
                           Comprar o box de ebooks
                         </a>
                       </div>
-
-
-                      <div class="extra-info d-none">
-                        <aside>
-                          <ul class="product-tags">
-                            <li class="product-tags-item">
-                              <span class="badge text-bg-light">
-                                + 1.000 leitores
-                              </span>
-                            </li>
-                            <li class="product-tags-item">
-                              <span class="badge text-bg-light">
-                                + 500 mil usuários
-                              </span>
-                            </li>
-                            <li class="product-tags-item">
-                              <span class="badge text-bg-light">
-                                98% de aprovação
-                              </span>
-                            </li>
-                          </ul>
-                        </aside>
-                      </div>
-
-                      <div class="features-holder d-none">
-                        <ul class="features">
-                          <li>
-                            💰 Garantia de 7 dias
-                          </li>
-                          <li>
-                            🛡️ Compra 100% segura pela Hotmart
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
 
@@ -494,11 +482,6 @@ h4 {
                         <img src="assets/img/landing-page-gorivaldo.png" class="img-fluid hero-img"
                           alt="Finanças Descomplicadas | Lógica Macaquista"
                           title="Finanças Descomplicadas | Lógica Macaquista" />
-                        <div class="ebook-cover-holder">
-                          <img src="assets/img/ebook-cover.webp" class="img-fluid ebook-cover d-none"
-                            alt="Finanças Descomplicadas | Lógica Macaquista"
-                            title="Finanças Descomplicadas | Lógica Macaquista" />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -743,7 +726,7 @@ h4 {
                         alt="Finanças Descomplicadas | Lógica Macaquista"
                         title="Finanças Descomplicadas | Lógica Macaquista" />
                       <div class="ebook-cover-holder">
-                        <img src="assets/img/ebook-cover.webp" class="img-fluid ebook-cover"
+                        <img src="assets/img/5-ebooks.png" class="img-fluid ebook-cover"
                           alt="Finanças Descomplicadas | Lógica Macaquista"
                           title="Finanças Descomplicadas | Lógica Macaquista" />
                       </div>
@@ -962,33 +945,34 @@ h4 {
   <script>
     function introAnimation() {
       const loader = document.getElementById("main-loader");
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        console.log('scrolled to top');
+        loader.classList.add('loaded');
+        console.log('executou animação pro topo', new Date(Date.now()));
+      }, 300);
 
-      // Slide text upward
-      loader.classList.add('loaded');
 
-      console.log('executou animação pro topo', new Date(Date.now()));
       // After slide finishes, fade intro and reveal content
       setTimeout(() => {
         document.body.classList.add('loaded');
         document.getElementById("hero-content").classList.add('loaded');
         console.log('called callback', new Date(Date.now()));
         document.body.style.overflow = "auto";
-      }, 800);
+      }, 1000);
     }
 
     const start = Date.now();
 
     window.addEventListener('load', () => {
       console.log('added event', new Date(Date.now()));
-
-      window.scrollTo(0, 0);
-      console.log('scrolled to top');
-
+      const loader = document.getElementById("main-loader");
+      loader.style.display = 'block';
       setTimeout(() => {
         document.getElementById('hero-logo-sub').style.opacity = '1';
         console.log('exibiu apresenta', new Date(Date.now()));
         setTimeout(introAnimation, 1000);
-      }, 400);
+      }, 1000);
     });
   </script>
 </body>
