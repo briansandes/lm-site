@@ -162,7 +162,7 @@
       img {
         transition: all .6s ease;
         opacity: 0;
-        transform: translateY(60px);
+        transform: translateY(20px);
         transition-property: transform;
       }
 
@@ -337,7 +337,7 @@
 
             .feature-holder {
               position: absolute;
-              bottom: 0px;
+              bottom: 20px;
               width: 100%;
               left: 0;
               padding: 0 16px;
@@ -350,7 +350,7 @@
         }
 
         .content-holder {
-          padding-top: 100px;
+          padding-top: 75px;
         }
 
         h2.title {
@@ -378,6 +378,7 @@
     .v-centered-container.hero-content {}
   </style>
   <link href="assets/css/styles.css" rel="stylesheet" />
+  <script>window.scrollTo(0, 0);</script>
 </head>
 
 <body>
@@ -755,7 +756,7 @@
                       Finanças Descomplicadas
                     </h1>
                     <div class="price">
-                      <ins aria-label="Preço promocional"><data value="47.90">R$ 47,90</data></ins>
+                      <ins aria-label="Preço promocional"><data value="97.90">R$ 97,90</data></ins>
                       <del aria-label="Preço original">R$ 129,90</del>
                     </div>
                     <p class="price-card">
@@ -961,6 +962,7 @@
     function introAnimation() {
       const loader = document.getElementById("main-loader");
       setTimeout(() => {
+
         window.scrollTo(0, 0);
         console.log('scrolled to top');
         loader.classList.add('loaded');
@@ -980,14 +982,18 @@
     const start = Date.now();
 
     window.addEventListener('load', () => {
+
+      window.scrollTo(0, 0);
       console.log('added event', new Date(Date.now()));
       const loader = document.getElementById("main-loader");
       loader.style.display = 'block';
       setTimeout(() => {
+
+        window.scrollTo(0, 0);
         document.getElementById('hero-logo-sub').style.opacity = '1';
         console.log('exibiu apresenta', new Date(Date.now()));
-        setTimeout(introAnimation, 1000);
-      }, 1000);
+        setTimeout(introAnimation, 500);
+      }, 500);
     });
   </script>
 </body>
