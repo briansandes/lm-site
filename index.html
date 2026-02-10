@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=block"
+    href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
     rel="stylesheet">
 
   <!-- basic css -->
@@ -340,7 +340,7 @@
     <section class="logica-macaquista" id="logica-macaquista">
       <div class="container">
         <div class="row">
-          <div class="col col-md-6">
+          <div class="col-md-6">
             <div class="institutional-holder">
               <h3 class="section-title">
                 Lógica Macaquista
@@ -367,7 +367,7 @@
             </div>
           </div>
 
-          <div class="col col-md-6">
+          <div class="col-md-6">
             <h3 class="section-title">
               NOSSAS MÉTRICAS
             </h3>
@@ -501,7 +501,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section-light py-5 d-none" id="faq">
+    <section class="section-light py-5" id="faq">
       <div class="container">
         <h2 class="text-center mb-4">Perguntas Frequentes</h2>
 
@@ -536,7 +536,7 @@
     </section>
   </main>
   <!-- FOOTER -->
-  <footer class="d-none">
+  <footer class="">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -567,12 +567,12 @@
       // Slide text upward
       loader.classList.add('loaded');
 
-      console.log('calling timeout');
+      console.log('executou animação pro topo', new Date(Date.now()));
       // After slide finishes, fade intro and reveal content
       setTimeout(() => {
         document.body.classList.add('loaded');
         document.getElementById("hero-content").classList.add('loaded');
-        console.log('called callback');
+        console.log('called callback', new Date(Date.now()));
         document.body.style.overflow = "auto";
       }, 800);
     }
@@ -580,18 +580,17 @@
     const start = Date.now();
 
     window.addEventListener('load', () => {
+      console.log('added event', new Date(Date.now()));
+
       window.scrollTo(0, 0);
       console.log('scrolled to top');
-      console.log('added event');
 
-      const elapsed = Date.now() - start;
-      const delay = Math.max(800 - elapsed, 0);
+      //setTimeout(() => {
+      document.getElementById('hero-logo-sub').style.opacity = '1';
+      console.log('exibiu apresenta', new Date(Date.now()));
+      //}, 200);
 
-      setTimeout(() => {
-        document.getElementById('hero-logo-sub').style.opacity = '1';
-      }, 200);
-
-      setTimeout(introAnimation, delay);
+      setTimeout(introAnimation, 1000);
     });
   </script>
 </body>
