@@ -24,16 +24,24 @@
 
     .background {
         background-color: #399595;
+        min-height: 480px;
 
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+        position: relative;
 
         .hero-img {
             border-radius: 0;
+            max-width: 300px;
+            position: absolute;
+            bottom: 0;
         }
 
         .ebook-cover-holder {
-            display: none;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 290px;
         }
     }
 
@@ -121,6 +129,8 @@
         }
 
         .background {
+            min-height: 180px;
+            position: relative;
 
             .hero-img {
                 max-width: 160px;
@@ -129,7 +139,7 @@
 
             .ebook-cover-holder {
                 display: inline-block;
-                width: 100px;
+                width: 140px;
                 border-radius: 0;
             }
         }
