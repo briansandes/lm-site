@@ -67,8 +67,11 @@
             }
         }
 
-        .price-card {
+        .product-description-text {
+            max-width: 400px;
         }
+
+        .price-card {}
 
         .cta-holder {
             margin-bottom: 16px;
@@ -104,25 +107,34 @@
 }
 
 
-    /* mobile */
-    @media screen and (max-width: 991px) {
-        .checkout {
-            .background {
-                background-color: #399595;
+/* mobile */
+@media screen and (max-width: 991px) {
+    .checkout {
+        padding-top: 32px;
+        padding-bottom: 32px;
 
-                .hero-img {
-                    max-width: 160px;
-                    display: inline-block;
-                }
+        .section-title {
+            font-size: 3rem;
+            border-bottom: none;
+            margin-bottom: 32px;
+            font-weight: bold;
+        }
 
-                .ebook-cover-holder {
-                    display: inline-block;
-                    width: 100px;
-                    border-radius: 0;
-                }
+        .background {
+
+            .hero-img {
+                max-width: 160px;
+                display: inline-block;
+            }
+
+            .ebook-cover-holder {
+                display: inline-block;
+                width: 100px;
+                border-radius: 0;
             }
         }
     }
+}
 
-    /* non mobile */
-    @media screen and (min-width: 992px) {}
+/* non mobile */
+@media screen and (min-width: 992px) {}
