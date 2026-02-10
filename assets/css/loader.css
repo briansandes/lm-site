@@ -5,7 +5,8 @@ body {
 
         section.saiba-mais,
         section.o-ebook,
-        section.logica-macaquista {
+        section.logica-macaquista,
+        section.checkout {
             display: block;
         }
     }
@@ -14,7 +15,8 @@ body {
 /* hiding sections */
 section.saiba-mais,
 section.o-ebook,
-section.logica-macaquista {
+section.logica-macaquista,
+section.checkout {
     display: none;
 }
 
