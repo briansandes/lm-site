@@ -162,7 +162,7 @@
       img {
         transition: all .6s ease;
         opacity: 0;
-        transform: translateY(60px);
+        transform: translateY(20px);
         transition-property: transform;
       }
 
@@ -314,10 +314,6 @@
           border: none;
         }
       }
-
-      .bananas-hero-holder {
-        display: none;
-      }
     }
 
 
@@ -327,10 +323,34 @@
         .hero-content {
           position: relative;
           z-index: 10;
+
+          .col-text {
+            position: absolute;
+            top: 0;
+          }
+
+          .col-feature {
+            position: absolute;
+            top: 50%;
+            height: 50%;
+            padding: 0;
+
+            .feature-holder {
+              position: absolute;
+              bottom: 20px;
+              width: 100%;
+              left: 0;
+              padding: 0 16px;
+
+              .background {
+                width: 320px;
+              }
+            }
+          }
         }
 
         .content-holder {
-          padding-top: 70px;
+          padding-top: 75px;
         }
 
         h2.title {
@@ -350,22 +370,15 @@
         .cta {
           font-size: 0.8rem;
         }
-
-        .bananas-hero-holder {
-          display: block;
-          position: absolute;
-          bottom: -100px;
-          width: 100%;
-          z-index: 5;
-
-          .bananas-hero {
-            max-width: 100%;
-          }
-        }
       }
     }
+
+    #main-loader {}
+
+    .v-centered-container.hero-content {}
   </style>
   <link href="assets/css/styles.css" rel="stylesheet" />
+  <script>window.scrollTo(0, 0);</script>
 </head>
 
 <body>
@@ -469,7 +482,7 @@
                           Saiba mais
                         </a>
                         <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=form_cta"
-                          class="btn btn-info cta cta-purchase">
+                          class="btn btn-info cta cta-purchase" target="_blank">
                           Comprar o box de ebooks
                         </a>
                       </div>
@@ -479,7 +492,7 @@
                   <div class="col-md-6 col-feature">
                     <div class="feature-holder">
                       <div class="background">
-                        <img src="assets/img/landing-page-gorivaldo.png" class="img-fluid hero-img"
+                        <img src="assets/img/landing-page-gorivaldo-ebooks.png" class="img-fluid hero-img"
                           alt="Finanças Descomplicadas | Lógica Macaquista"
                           title="Finanças Descomplicadas | Lógica Macaquista" />
                       </div>
@@ -488,9 +501,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="bananas-hero-holder">
-            <img src="assets/img/bananas-hero.webp" class="bananas-hero" />
           </div>
         </section>
       </article>
@@ -630,8 +640,98 @@
         </div>
 
       </div>
+      <div class="floating-banana-holder">
+        <img src="assets/img/banana.png" alt="Eu sou uma banana!" title="Eu sou uma banana!" class="floating-banana" />
+      </div>
     </section>
 
+    <section class="checkout" id="comprar">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+            <h3 class="section-title">Adquira já o box completo com 5 ebooks</h3>
+
+            <div class="card">
+              <div class="row">
+                <div class="col-md-6 col-feature">
+                  <div class="feature-holder">
+                    <div class="background">
+                      <!-- <img src="assets/img/hero-gorivaldo.png" class="img-fluid hero-img"
+                        alt="Finanças Descomplicadas | Lógica Macaquista"
+                        title="Finanças Descomplicadas | Lógica Macaquista" /> -->
+                      <div class="ebook-cover-holder">
+                        <img src="assets/img/capa-ebook.png" class="img-fluid ebook-cover"
+                          alt="Finanças Descomplicadas | Lógica Macaquista"
+                          title="Finanças Descomplicadas | Lógica Macaquista" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-text">
+                  <div class="text-holder">
+                    <span class="offer badge text-bg-danger">super oferta</span>
+                    <h1 class="title">
+                      Finanças Descomplicadas
+                    </h1>
+                    <div class="price">
+                      <ins aria-label="Preço promocional"><data value="97.90">R$ 97,90</data></ins>
+                      <del aria-label="Preço original">R$ 129,90</del>
+                    </div>
+                    <p class="price-card">
+                      6x de R$ 18,37 no cartão
+                    </p>
+                    <p class="product-description-text">
+                      Todo o Box com 5 eBooks que você precisa para controlar gastos,
+                      eliminar dívidas e investir com confiança,
+                      sem complicação ou linguagem difícil.</p>
+                    <div class="cta-holder">
+                      <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=form_cta"
+                        target="_blank" class="btn btn-warning cta">
+                        COMPRAR BOX COMPLETO
+                      </a>
+                    </div>
+                    <div class="extra-info">
+                      <aside>
+                        <ul class="product-tags">
+                          <li class="product-tags-item">
+                            <span class="badge text-bg-light">
+                              + 1.000 leitores
+                            </span>
+                          </li>
+                          <li class="product-tags-item">
+                            <span class="badge text-bg-light">
+                              + 500 mil usuários
+                            </span>
+                          </li>
+                          <li class="product-tags-item">
+                            <span class="badge text-bg-light">
+                              98% de aprovação
+                            </span>
+                          </li>
+                        </ul>
+                      </aside>
+                    </div>
+
+                    <div class="features-holder">
+                      <ul class="features">
+                        <li>
+                          💰 Garantia de 7 dias
+                        </li>
+                        <li>
+                          🛡️ Compra 100% segura pela Hotmart
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
     <section class="logica-macaquista" id="logica-macaquista">
       <div class="container">
         <div class="row">
@@ -705,98 +805,14 @@
                 </div>
               </div>
             </div>
+            <!--<div class="monte-folhas-holder">
+              <img src="assets/img/monte-folhas.png" alt="Folhas" title="Folhas" class="monte-folhas img-fluid" />
+            </div> -->
           </div>
         </div>
       </div>
     </section>
 
-    <section class="checkout" id="comprar">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-
-            <h3 class="section-title">Adquira já o box completo com 5 ebooks</h3>
-
-            <div class="card">
-              <div class="row">
-                <div class="col-md-6 col-feature">
-                  <div class="feature-holder">
-                    <div class="background">
-                      <img src="assets/img/hero-gorivaldo.png" class="img-fluid hero-img"
-                        alt="Finanças Descomplicadas | Lógica Macaquista"
-                        title="Finanças Descomplicadas | Lógica Macaquista" />
-                      <div class="ebook-cover-holder">
-                        <img src="assets/img/5-ebooks.png" class="img-fluid ebook-cover"
-                          alt="Finanças Descomplicadas | Lógica Macaquista"
-                          title="Finanças Descomplicadas | Lógica Macaquista" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-text">
-                  <div class="text-holder">
-                    <span class="offer badge text-bg-danger">super oferta</span>
-                    <h1 class="title">
-                      Finanças Descomplicadas
-                    </h1>
-                    <div class="price">
-                      <ins aria-label="Preço promocional"><data value="47.90">R$ 47,90</data></ins>
-                      <del aria-label="Preço original">R$ 129,90</del>
-                    </div>
-                    <p class="price-card">
-                      6x de R$ 8,82 no cartão
-                    </p>
-                    <p class="product-description-text">
-                      Todo o Box com 5 eBooks que você precisa para controlar gastos,
-                      eliminar dívidas e investir com confiança,
-                      sem complicação ou linguagem difícil.</p>
-                    <div class="cta-holder">
-                      <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=form_cta"
-                        target="_blank" class="btn btn-warning cta">
-                        COMPRAR BOX COMPLETO
-                      </a>
-                    </div>
-                    <div class="extra-info">
-                      <aside>
-                        <ul class="product-tags">
-                          <li class="product-tags-item">
-                            <span class="badge text-bg-light">
-                              + 1.000 leitores
-                            </span>
-                          </li>
-                          <li class="product-tags-item">
-                            <span class="badge text-bg-light">
-                              + 500 mil usuários
-                            </span>
-                          </li>
-                          <li class="product-tags-item">
-                            <span class="badge text-bg-light">
-                              98% de aprovação
-                            </span>
-                          </li>
-                        </ul>
-                      </aside>
-                    </div>
-
-                    <div class="features-holder">
-                      <ul class="features">
-                        <li>
-                          💰 Garantia de 7 dias
-                        </li>
-                        <li>
-                          🛡️ Compra 100% segura pela Hotmart
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
     <!-- FAQ -->
     <section class="faq" id="faq">
@@ -946,6 +962,7 @@
     function introAnimation() {
       const loader = document.getElementById("main-loader");
       setTimeout(() => {
+
         window.scrollTo(0, 0);
         console.log('scrolled to top');
         loader.classList.add('loaded');
@@ -965,14 +982,18 @@
     const start = Date.now();
 
     window.addEventListener('load', () => {
+
+      window.scrollTo(0, 0);
       console.log('added event', new Date(Date.now()));
       const loader = document.getElementById("main-loader");
       loader.style.display = 'block';
       setTimeout(() => {
+
+        window.scrollTo(0, 0);
         document.getElementById('hero-logo-sub').style.opacity = '1';
         console.log('exibiu apresenta', new Date(Date.now()));
-        setTimeout(introAnimation, 1000);
-      }, 1000);
+        setTimeout(introAnimation, 500);
+      }, 500);
     });
   </script>
 </body>

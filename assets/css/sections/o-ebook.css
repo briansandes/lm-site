@@ -67,6 +67,18 @@
             }
         }
     }
+
+    .floating-banana-holder {
+        position: absolute;
+        bottom: -100px;
+        right: 60px;
+        width: 300px;
+
+        .floating-banana {
+            max-width: 100%;
+            transform: rotate(25deg);
+        }
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -100,6 +112,12 @@
                     transform: none;
                 }
             }
+        }
+
+        .floating-banana-holder {
+            bottom: -50px;
+            right: 30px;
+            width: 120px;
         }
     }
 }
