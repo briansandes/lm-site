@@ -4,15 +4,17 @@ body {
     &.loaded {
 
         section.saiba-mais,
-        section.o-ebook {
+        section.o-ebook,
+        section.logica-macaquista {
             display: block;
         }
     }
 }
 
 /* hiding sections */
-.saiba-mais,
-.o-ebook {
+section.saiba-mais,
+section.o-ebook,
+section.logica-macaquista {
     display: none;
 }
 

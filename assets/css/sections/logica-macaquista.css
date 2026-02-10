@@ -1,0 +1,23 @@
+.logica-macaquista {
+    background: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    h3.section-title {
+        font-size: 3rem;
+        border-bottom: solid 2px #cccccc;
+        margin-bottom: 32px;
+        color: black;
+    }
+
+    .item-list {
+        .item-card {
+            border: solid 1px black;
+            padding: 16px;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 32px;
+            box-shadow: -4px 4px 0 black;
+        }
+    }
+}
