@@ -26,12 +26,324 @@
     body {
       background: var(--primary-bg-color);
     }
-  </style>
 
-  <link href="assets/css/loader.css" rel="stylesheet" />
-  <link href="assets/css/styles.css" rel="stylesheet" />
-  <style>
+    body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Staatliches", sans-serif;
+}
+
+.lm-dark-bg {
+    background-color: var(--primary-bg-color);
+}
+
+.tilt {
+    display: inline-block;
+    animation: tiltAnim 1s steps(1) infinite;
+}
+
+@keyframes tiltAnim {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.hero-logo-holder {
+    text-align: center;
+    color: white;
+
+    .hero-logo {
+        font-size: 2.5rem;
+
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: -2px 2px 0px black;
+        margin-bottom: 0;
+    }
+
+    .hero-logo-sub {
+        font-family: "Marck Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 2rem;
+        text-shadow: -2px 2px 0px black;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+/* non mobile */
+@media screen and (min-width: 992px) {
+}
+
+    body {
+      overflow: hidden;
+
+      &.loaded {
+
+        section.saiba-mais,
+        section.o-ebook,
+        section.logica-macaquista,
+        section.checkout,
+        section.faq,
+        footer.footer {
+          display: block;
+        }
+      }
+    }
+
+    /* hiding sections */
+    section.saiba-mais,
+    section.o-ebook,
+    section.logica-macaquista,
+    section.checkout,
+    section.faq,
+    footer.footer {
+      display: none;
+    }
+
+    section.hero {
+      .bananas-hero-holder {
+        transition: all .8s ease;
+        opacity: 0;
+        transform: translateY(60px);
+      }
+    }
+
+    body.loaded {
+      .bananas-hero-holder {
+        transition: all .8s ease;
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    .hero-content {
+      opacity: 0;
+      transition: opacity .8s ease;
+
+      h2,
+      p,
+      a,
+      img {
+        transition: all .8s ease;
+        opacity: 0;
+        transform: translateY(60px);
+      }
+
+      &.loaded {
+        opacity: 1;
+
+        h2,
+        p,
+        a,
+        img {
+          transition: all .8s ease;
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+    }
+
+    .main-loader {
+      position: absolute;
+      top: 40vh;
+      width: 100%;
+      z-index: 9999;
+      transition: all .8s ease;
+
+      .hero-logo-holder {
+        h1.hero-logo {
+          font-size: 5rem;
+          transition: all .8s ease;
+        }
+
+        .hero-logo-sub {
+          font-size: 4rem;
+          opacity: 0;
+          transition: all .8s ease;
+        }
+      }
+
+
+
+      &.loaded {
+        top: 32px;
+
+        .hero-logo-holder {
+          .hero-logo {
+            font-size: 2.5rem;
+          }
+
+          .hero-logo-sub {
+            font-size: 2rem;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    /* mobile */
+    @media screen and (max-width: 991px) {
+      .main-loader {
+        .hero-logo-holder {
+          h1.hero-logo {
+            font-size: 3rem;
+            line-height: 3rem;
+            margin-bottom: 0;
+          }
+
+          .hero-logo-sub {
+            font-size: 2rem;
+            line-height: 1.5rem;
+          }
+        }
+
+
+
+        &.loaded {
+          top: 16px;
+
+          .hero-logo-holder {
+            .hero-logo {
+              font-size: 2rem;
+              line-height: 1.5rem;
+            }
+
+            .hero-logo-sub {
+              font-size: 1.5rem;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    section.hero {
+    color: white;
+    height: 100vh;
+    display: flex;
+
+    .v-centered-container {
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        width: 100%;
+    }
+
+    h2.title {
+        font-size: 6rem;
+        text-shadow: -4px 4px 0px black;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-shadow: -2px 2px 0px black;
+    }
+
+    .cta {
+        border-radius: 0;
+        font-size: 1.5rem;
+        box-shadow: -4px 4px 0px black;
+        text-transform: uppercase;
+        padding: 8px 16px;
+
+        &.cta-learn-more {
+            background-color: white;
+            border: none;
+        }
+
+        &.cta-purchase {
+            margin-left: 16px;
+            background-color: #ffa500;
+            border: none;
+        }
+    }
+
+    .bananas-hero-holder {
+        display: none;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+    section.hero {
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .content-holder {
+            padding-top: 70px;
+        }
+
+        h2.title {
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+
+        .cta-holder {
+            margin-bottom: 32px;
+        }
+        .cta {
+            font-size: 0.8rem;
+        }
+
+        .bananas-hero-holder {
+            display: block;
+            position: absolute;
+            bottom: -100px;
+            width: 100%;
+            z-index: 5;
+
+            .bananas-hero {
+                max-width: 100%;
+            }
+        }
+    }
+}
   </style>
+  <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -377,7 +689,7 @@
                   <div class="item-card">
                     <div class="item-icon"></div>
                     <p class="item-title">
-                      +500 mil seguidores
+                      +500 mil<br /> seguidores
                     </p>
                   </div>
                 </div>
@@ -385,7 +697,7 @@
                   <div class="item-card">
                     <div class="item-icon"></div>
                     <p class="item-title">
-                      +100 vídeos
+                      +100 vídeos<br />
                       publicados
                     </p>
                   </div>
@@ -394,7 +706,8 @@
                   <div class="item-card">
                     <div class="item-icon"></div>
                     <p class="item-title">
-                      25 milhões de visualizações
+                      25 milhões de<br />
+                      visualizações
                     </p>
                   </div>
                 </div>
@@ -402,7 +715,8 @@
                   <div class="item-card">
                     <div class="item-icon"></div>
                     <p class="item-title">
-                      5 produtos lançados
+                      5 produtos<br />
+                      lançados
                     </p>
                   </div>
                 </div>
@@ -670,12 +984,11 @@
       window.scrollTo(0, 0);
       console.log('scrolled to top');
 
-      //setTimeout(() => {
-      document.getElementById('hero-logo-sub').style.opacity = '1';
-      console.log('exibiu apresenta', new Date(Date.now()));
-      //}, 200);
-
-      setTimeout(introAnimation, 1000);
+      setTimeout(() => {
+        document.getElementById('hero-logo-sub').style.opacity = '1';
+        console.log('exibiu apresenta', new Date(Date.now()));
+        setTimeout(introAnimation, 1000);
+      }, 400);
     });
   </script>
 </body>
