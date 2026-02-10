@@ -1,12 +1,12 @@
 body {
     overflow: hidden;
-
     &.loaded {
-
         section.saiba-mais,
         section.o-ebook,
         section.logica-macaquista,
-        section.checkout {
+        section.checkout,
+        section.faq,
+        footer.footer {
             display: block;
         }
     }
@@ -16,7 +16,9 @@ body {
 section.saiba-mais,
 section.o-ebook,
 section.logica-macaquista,
-section.checkout {
+section.checkout,
+section.faq,
+footer.footer {
     display: none;
 }
 
