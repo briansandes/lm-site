@@ -38,3 +38,27 @@ section.hero {
         }
     }
 }
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+    section.hero {
+        .content-holder {
+            padding-top: 70px;
+        }
+
+        h2.title {
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+
+        .cta {
+            font-size: 0.8rem;
+        }
+    }
+}
