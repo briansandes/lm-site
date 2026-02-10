@@ -20,6 +20,7 @@ section.saiba-mais {
 /* mobile */
 @media screen and (max-width: 991px) {
     section.saiba-mais {
+        padding-top: 120px;
 
         .section-title {
             vertical-align: top;
