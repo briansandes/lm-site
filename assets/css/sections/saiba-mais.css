@@ -10,6 +10,7 @@ section.saiba-mais {
 
     .section-text {
         max-width: 600px;
+        font-size: 1.25rem;
     }
 
     .mobile-gorivaldo {
@@ -20,11 +21,19 @@ section.saiba-mais {
 /* mobile */
 @media screen and (max-width: 991px) {
     section.saiba-mais {
+        padding-top: 120px;
+        padding-bottom: 32px;
 
         .section-title {
             vertical-align: top;
             text-align: left;
             font-size: 2rem;
+            padding-bottom: 16px;
+        }
+
+        .section-text {
+            max-width: 600px;
+            font-size: 1rem;
         }
 
         .mobile-gorivaldo {
