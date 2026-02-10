@@ -85,3 +85,39 @@ section.checkout {
         }
     }
 }
+
+/* mobile */
+@media screen and (max-width: 991px) {
+    .main-loader {
+        .hero-logo-holder {
+            h1.hero-logo {
+                font-size: 3rem;
+                line-height: 3rem;
+                margin-bottom: 0;
+            }
+
+            .hero-logo-sub {
+                font-size: 2rem;
+                line-height: 1.5rem;
+            }
+        }
+
+
+
+        &.loaded {
+            top: 16px;
+
+            .hero-logo-holder {
+                .hero-logo {
+                    font-size: 2rem;
+                    line-height: 1.5rem;
+                }
+
+                .hero-logo-sub {
+                    font-size: 1.5rem;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
