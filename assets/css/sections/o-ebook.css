@@ -6,11 +6,15 @@
     text-shadow: none;
     position: relative;
 
-    .gorivaldo-professor {
+    .gorivaldo-professor-holder {
         position: absolute;
         max-width: 500px;
         top: 30%;
         left: 0;
+
+        .gorivaldo-professor {
+            max-width: 100%;
+        }
     }
 
     .section-title {
@@ -60,6 +64,41 @@
 
             p {
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    section.o-ebook {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        .gorivaldo-professor-holder {
+            left: 20px;
+            top: 60px;
+            max-width: 120px;
+        }
+
+        h3.section-title {
+            font-size: 2rem;
+            padding-bottom: 16px;
+            margin-bottom: 32px;
+            float: right;
+            text-align: right;
+            max-width: 250px;
+        }
+
+        .benefits-list {
+
+            li:nth-child(even),
+            li:nth-child(odd) {
+                padding-left: 0;
+                padding-right: 0;
+
+                .item-content {
+                    transform: none;
+                }
             }
         }
     }
