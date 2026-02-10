@@ -16,6 +16,18 @@
     href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
     rel="stylesheet">
 
+  <!-- basic css -->
+  <style>
+    :root {
+      --primary-bg-color: #399595;
+      /* global scope */
+    }
+
+    body {
+      background: var(--primary-bg-color);
+    }
+  </style>
+
   <link href="assets/css/loader.css" rel="stylesheet" />
   <link href="assets/css/styles.css" rel="stylesheet" />
   <style>
@@ -36,7 +48,6 @@
             <h1 class="title">
               LÓGICA MACAQUISTA
             </h1>
-            <p></p>
           </span>
         </a>
 
@@ -123,7 +134,7 @@
                         <a href="#saiba-mais" class="btn btn-light cta cta-learn-more">
                           Saiba mais
                         </a>
-                        <a href="#" class="btn btn-info cta cta-purchase">
+                        <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=form_cta" class="btn btn-info cta cta-purchase">
                           Comprar o box de ebooks
                         </a>
                       </div>
@@ -183,7 +194,7 @@
             </div>
           </div>
           <div class="bananas-hero-holder">
-            <img src="assets/img/bananas-hero.png" class="bananas-hero" />
+            <img src="assets/img/bananas-hero.webp" class="bananas-hero" />
           </div>
         </section>
       </article>
@@ -328,13 +339,13 @@
     <section class="logica-macaquista" id="logica-macaquista">
       <div class="container">
         <div class="row">
-          <div class="col col-md-6">
+          <div class="col-md-6">
             <div class="institutional-holder">
               <h3 class="section-title">
                 Lógica Macaquista
               </h3>
               <div class="text-holder">
-                <p class="fs-5">
+                <p class="section-text">
                   A Lógica Macaquista nasceu com o objetivo de explicar temas
                   importantes da vida real de forma simples, leve e até divertida.<br />
                   Nosso foco é transformar assuntos que normalmente
@@ -343,7 +354,7 @@
                   em conhecimento prático que qualquer pessoa
                   consiga entender e aplicar no dia a dia.
                 </p>
-                <p class="fs-5">
+                <p class="section-text">
                   Acreditamos que organizar o dinheiro não precisa ser caro,
                   chato ou inacessível. Com ferramentas práticas,
                   exemplos claros e uma abordagem acessível,
@@ -355,7 +366,7 @@
             </div>
           </div>
 
-          <div class="col col-md-6">
+          <div class="col-md-6">
             <h3 class="section-title">
               NOSSAS MÉTRICAS
             </h3>
@@ -437,11 +448,12 @@
                     <p class="price-card">
                       6x de R$ 8,82 no cartão
                     </p>
-                    <p>
-                      Todos 5 ebooks de educação financeira
-                    </p>
+                    <p class="product-description-text">
+                      Todo o Box com 5 eBooks que você precisa para controlar gastos,
+                      eliminar dívidas e investir com confiança,
+                      sem complicação ou linguagem difícil.</p>
                     <div class="cta-holder">
-                      <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=hero_cta"
+                      <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=form_cta"
                         target="_blank" class="btn btn-warning cta">
                         COMPRAR BOX COMPLETO
                       </a>
@@ -489,7 +501,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section-light py-5 d-none" id="faq">
+    <section class="section-light py-5" id="faq">
       <div class="container">
         <h2 class="text-center mb-4">Perguntas Frequentes</h2>
 
@@ -524,7 +536,7 @@
     </section>
   </main>
   <!-- FOOTER -->
-  <footer class="d-none">
+  <footer class="">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -546,8 +558,41 @@
       </div>
     </div>
   </footer>
-  <script src="assets/js/loader.js"></script>
+  <!-- 10th feb. 2026 moved loader to index file -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function introAnimation() {
+      const loader = document.getElementById("main-loader");
+
+      // Slide text upward
+      loader.classList.add('loaded');
+
+      console.log('executou animação pro topo', new Date(Date.now()));
+      // After slide finishes, fade intro and reveal content
+      setTimeout(() => {
+        document.body.classList.add('loaded');
+        document.getElementById("hero-content").classList.add('loaded');
+        console.log('called callback', new Date(Date.now()));
+        document.body.style.overflow = "auto";
+      }, 800);
+    }
+
+    const start = Date.now();
+
+    window.addEventListener('load', () => {
+      console.log('added event', new Date(Date.now()));
+
+      window.scrollTo(0, 0);
+      console.log('scrolled to top');
+
+      //setTimeout(() => {
+      document.getElementById('hero-logo-sub').style.opacity = '1';
+      console.log('exibiu apresenta', new Date(Date.now()));
+      //}, 200);
+
+      setTimeout(introAnimation, 1000);
+    });
+  </script>
 </body>
 
 </html>

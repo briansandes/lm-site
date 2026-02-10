@@ -55,6 +55,7 @@ h4 {
         font-weight: 400;
         font-style: normal;
         text-shadow: -2px 2px 0px black;
+        margin-bottom: 0;
     }
 
     .hero-logo-sub {
@@ -62,6 +63,7 @@ h4 {
         font-weight: 400;
         font-style: normal;
         font-size: 2rem;
+        line-height: 2rem;
         text-shadow: -2px 2px 0px black;
     }
 }
