@@ -123,6 +123,10 @@
         footer.footer {
           display: block;
         }
+
+        section.hero {
+          overflow: initial;
+        }
       }
     }
 
@@ -162,7 +166,7 @@
       img {
         transition: all .6s ease;
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(70px);
         transition-property: transform;
       }
 
@@ -277,11 +281,31 @@
       color: white;
       height: 100vh;
       display: flex;
+      overflow: hidden;
+
+      background-size: 30px 60px;
+      background-image: repeating-linear-gradient(45deg, #52a8a8 0, #399595 1px, #399595 0, #399595 50%);
 
       .v-centered-container {
         height: 100vh;
         display: grid;
         align-items: center;
+        width: 100%;
+      }
+
+      .col-text {
+        display: flex;
+
+        .content-holder {
+          display: grid;
+          align-items: center;
+        }
+      }
+
+      .hero-img {
+        max-width: 520px;
+        margin: 0 auto;
+        display: block;
         width: 100%;
       }
 
@@ -337,7 +361,7 @@
 
             .feature-holder {
               position: absolute;
-              bottom: 20px;
+              bottom: -80px;
               width: 100%;
               left: 0;
               padding: 0 16px;
@@ -368,7 +392,7 @@
         }
 
         .cta {
-          font-size: 0.8rem;
+          font-size: 0.75rem;
         }
       }
     }
@@ -457,34 +481,36 @@
 
                   <div class="col-md-6 col-text">
                     <div class="content-holder">
-                      <div class="title-holder">
-                        <h2 class="title staatliches-regular">
-                          Finanças Descomplicadas
-                        </h2>
-                      </div>
-                      <div class="text-holder">
-                        <div class="text">
-                          <p>
-                            Aprenda finanças de forma simples,<br>
-                            direta e sem linguagem complicada
-                          </p>
-
-                          <p>
-                            Entenda como o dinheiro funciona na prática sem nunca ter estudado economia.
-                          </p>
-                          <p>
-                            Todos 5 ebooks de educação financeira
-                          </p>
+                      <div class="v-content">
+                        <div class="title-holder">
+                          <h2 class="title staatliches-regular">
+                            Finanças Descomplicadas
+                          </h2>
                         </div>
-                      </div>
-                      <div class="cta-holder">
-                        <a href="#saiba-mais" class="btn btn-light cta cta-learn-more">
-                          Saiba mais
-                        </a>
-                        <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=form_cta"
-                          class="btn btn-info cta cta-purchase" target="_blank">
-                          Comprar o box de ebooks
-                        </a>
+                        <div class="text-holder">
+                          <div class="text">
+                            <p>
+                              Aprenda finanças de forma simples,<br>
+                              direta e sem linguagem complicada
+                            </p>
+
+                            <p>
+                              Entenda como o dinheiro funciona na prática sem nunca ter estudado economia.
+                            </p>
+                            <p>
+                              Todos 5 ebooks de educação financeira
+                            </p>
+                          </div>
+                        </div>
+                        <div class="cta-holder">
+                          <a href="#saiba-mais" class="btn btn-light cta cta-learn-more">
+                            Saiba mais
+                          </a>
+                          <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=form_cta"
+                            class="btn btn-info cta cta-purchase" target="_blank">
+                            Comprar o box de ebooks
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -492,7 +518,7 @@
                   <div class="col-md-6 col-feature">
                     <div class="feature-holder">
                       <div class="background">
-                        <img src="assets/img/landing-page-gorivaldo-ebooks.png" class="img-fluid hero-img"
+                        <img src="assets/img/novo-gorivaldo-hero.png" class="img-fluid hero-img"
                           alt="Finanças Descomplicadas | Lógica Macaquista"
                           title="Finanças Descomplicadas | Lógica Macaquista" />
                       </div>
@@ -509,11 +535,11 @@
     <section class="saiba-mais" id="saiba-mais">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 hide-mobile">
+          <div class="col-lg-4 hide-mobile">
             <img src="assets/img/saiba-mais-financas.png" class="img-fluid" alt="Macacolândia" title="Macacolândia" />
           </div>
-          <div class="col-md-1 hide-mobile"></div>
-          <div class="col-md-6">
+          <div class="col-lg-1 hide-mobile"></div>
+          <div class="col-lg-6">
             <h2 class="section-title">
               <span class="mobile-gorivaldo">
                 <img src="assets/img/saiba-mais-financas.png" class="img-fluid" alt="Macacolândia"
@@ -650,7 +676,7 @@
         <div class="row">
           <div class="col">
 
-            <h3 class="section-title">Adquira já o box completo com 5 ebooks</h3>
+            <h3 class="section-title">Adquira já o box completo <span class="nowrap-992">com 5 ebooks</span></h3>
 
             <div class="card">
               <div class="row">
@@ -661,7 +687,7 @@
                         alt="Finanças Descomplicadas | Lógica Macaquista"
                         title="Finanças Descomplicadas | Lógica Macaquista" /> -->
                       <div class="ebook-cover-holder">
-                        <img src="assets/img/capa-ebook.png" class="img-fluid ebook-cover"
+                        <img src="assets/img/capa-ebook.jpg" class="img-fluid ebook-cover"
                           alt="Finanças Descomplicadas | Lógica Macaquista"
                           title="Finanças Descomplicadas | Lógica Macaquista" />
                       </div>

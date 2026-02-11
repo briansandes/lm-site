@@ -22,7 +22,7 @@ section.saiba-mais {
 /* mobile */
 @media screen and (max-width: 991px) {
     section.saiba-mais {
-        padding-top: 32px;
+        padding-top: 100px;
         padding-bottom: 32px;
 
         .section-title {
@@ -33,7 +33,7 @@ section.saiba-mais {
         }
 
         .section-text {
-            max-width: 600px;
+            max-width: none;
             font-size: 1rem;
         }
 
