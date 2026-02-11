@@ -123,11 +123,11 @@
 /* mobile */
 @media screen and (max-width: 991px) {
     .checkout {
-        padding-top: 32px;
+        padding-top: 48px;
         padding-bottom: 32px;
 
         .section-title {
-            font-size: 3rem;
+            font-size: 2.5rem;
             border-bottom: none;
             margin-bottom: 32px;
             font-weight: bold;
