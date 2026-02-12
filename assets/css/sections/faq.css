@@ -2,6 +2,7 @@
     background-color: white;
     padding-top: 64px;
     padding-bottom: 64px;
+    display: none !important;
 
     .section-title {
         font-size: 4rem;

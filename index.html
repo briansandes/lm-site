@@ -23,6 +23,10 @@
       /* global scope */
     }
 
+    asd {
+      box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+    }
+
     /* ----------------- */
     /* base css */
     body {
@@ -793,7 +797,8 @@
         </div>
 
       </div>
-      <img src="assets/img/macacolandia.png" class="img-fluid" style="margin-top: 40px;" />
+      <img src="assets/img/macacolandia-noite.png" class="img-fluid macacolandia-noite" style="margin-top: 40px;" />
+      <div class="macacolandia-noite-mobile"></div>
     </section>
 
     <!-- FAQ -->
@@ -917,23 +922,43 @@
   </main>
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h6>Sobre</h6>
-          <p>Lógica Macaquista é educação financeira sem fantasia.</p>
-        </div>
-        <div class="col-md-4">
-          <h6>Institucional</h6>
-          <ul class="list-unstyled">
-            <li>Termos de Uso</li>
-            <li>Garantia</li>
-            <li>Métodos de Pagamento</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h6>Contato</h6>
-          <p>contato@logicamacaquista.com</p>
+    <div class="footer-mobile-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="placa">
+              <p>
+                Lógica Macaquista<br />
+                LM PRODUÇÕES
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="placa">
+              <a href="https://hotmart.com/pt-br/legal/termos-de-uso" target="_blank">
+                Termos de uso
+              </a><br />
+              <a href="mailto:contato@logicamacaquista.com.br" target="_blank">
+                Contato
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="placa">
+              <h6 class="text-center">SIGA NOS</h6>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/logica.macaquista/" target="_blank">
+                  <img src="assets/img/icon-instagram.png" />
+                </a>
+                <a href="https://www.tiktok.com/@logica.macaquista" target="_blank">
+                  <img src="assets/img/icon-tiktok.png" />
+                </a>
+                <a href="https://www.youtube.com/@logica.macaquista" target="_blank">
+                  <img src="assets/img/icon-youtube.png" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -993,13 +1018,13 @@
           let blink_once = Math.round(Math.random()) % 2 === 0;
 
           if (blink_once) {
-            setTimeout(() => {blink(false)}, Math.random() * 4000 + 2000);
+            setTimeout(() => { blink(false) }, Math.random() * 4000 + 2000);
           } else {
             setTimeout(() => {
               g.style.zIndex = '10';
               setTimeout(() => {
                 g.style.zIndex = '0';
-                setTimeout(() => {blink(true)}, Math.random() * 10000 + 2000);
+                setTimeout(() => { blink(true) }, Math.random() * 10000 + 2000);
               }, 200);
             }, 160);
           }
