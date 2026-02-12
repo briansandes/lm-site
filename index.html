@@ -178,7 +178,7 @@
       p,
       a,
       img {
-        transition: all .6s ease;
+        transition: transform .6s ease, opacity .6s ease;
         opacity: 0;
         transform: translateY(70px);
         transition-property: transform;
@@ -207,7 +207,7 @@
         p,
         a,
         img {
-          transition: all .8s ease;
+          transition: transform .6s ease, opacity .6s ease;
           opacity: 1;
           transform: translateY(0px);
         }
@@ -331,12 +331,30 @@
         }
       }
 
-      .hero-img {
+      .gorivaldo-hero-holder {
+        position: relative;
         max-width: 520px;
         margin: 0 auto;
         display: block;
-        width: 100%;
         animation: float 4s ease-in-out infinite;
+
+        .hero-img,
+        .hero-img-blink {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+        }
+
+        .hero-img {
+          position: relative;
+          z-index: 5;
+
+        }
+
+        .hero-img-blink {
+          z-index: 0;
+        }
       }
 
       h2.title {
@@ -529,9 +547,14 @@
                   <div class="col-md-6 col-feature">
                     <div class="feature-holder">
                       <div class="background">
-                        <img src="assets/img/novo-gorivaldo-hero.png" class="img-fluid hero-img"
-                          alt="Finanças Descomplicadas | Lógica Macaquista"
-                          title="Finanças Descomplicadas | Lógica Macaquista" />
+                        <div class="gorivaldo-hero-holder">
+                          <img src="assets/img/novo-gorivaldo-hero-blink.png" id="g-hero-blink"
+                            class="img-fluid hero-img-blink" alt="Finanças Descomplicadas | Lógica Macaquista"
+                            title="Finanças Descomplicadas | Lógica Macaquista" />
+                          <img src="assets/img/novo-gorivaldo-hero.png" id="g-hero-bg" class="img-fluid hero-img"
+                            alt="Finanças Descomplicadas | Lógica Macaquista"
+                            title="Finanças Descomplicadas | Lógica Macaquista" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -958,6 +981,33 @@
         }, 500);
       }, 200);
     });
+
+    const g = document.getElementById("g-hero-blink");
+
+    function blink(twice = false) {
+      setTimeout(() => {
+        g.style.zIndex = '10';
+        setTimeout(() => {
+          g.style.zIndex = '0';
+
+          let blink_once = Math.round(Math.random()) % 2 === 0;
+
+          if (blink_once) {
+            setTimeout(() => {blink(false)}, Math.random() * 4000 + 2000);
+          } else {
+            setTimeout(() => {
+              g.style.zIndex = '10';
+              setTimeout(() => {
+                g.style.zIndex = '0';
+                setTimeout(() => {blink(true)}, Math.random() * 10000 + 2000);
+              }, 200);
+            }, 160);
+          }
+        }, 120);
+      }, 60);
+    }
+
+    setTimeout(blink, 5000);
   </script>
 </body>
 
