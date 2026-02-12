@@ -52,6 +52,20 @@
       background-color: var(--primary-bg-color);
     }
 
+    @keyframes float {
+      0% {
+        transform: translatey(16px);
+      }
+
+      50% {
+        transform: translatey(-16px);
+      }
+
+      100% {
+        transform: translatey(16px);
+      }
+    }
+
     .tilt {
       display: inline-block;
       animation: tiltAnim 1s steps(1) infinite;
@@ -322,6 +336,7 @@
         margin: 0 auto;
         display: block;
         width: 100%;
+        animation: float 4s ease-in-out infinite;
       }
 
       h2.title {
@@ -694,13 +709,13 @@
                 </div>
                 <div class="col-md-6 col-text">
                   <div class="text-holder">
-                    <span class="offer badge text-bg-danger">super oferta</span>
+                    <span class="offer badge text-bg-danger">super oferta de lançamento 30% Off</span>
                     <h1 class="title">
                       Finanças Descomplicadas
                     </h1>
                     <div class="price">
                       <ins aria-label="Preço promocional"><data value="68.70">R$ 68,70</data></ins>
-                      <del aria-label="Preço original">R$ 68,70</del>
+                      <del aria-label="Preço original">R$ 97,20</del>
                     </div>
                     <p class="price-card">
                       6x de R$ 12,89 no cartão
