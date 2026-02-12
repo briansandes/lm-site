@@ -139,7 +139,26 @@
         }
 
         .placa {
+            width: 300px;
+            height: 190px;
             margin-bottom: 32px;
+            padding: 16px 36px;
+
+            a,
+            h6,
+            p {
+                font-size: 2rem;
+            }
+
+            &.placa-1 {
+                transform: scale(0.8) translateX(60px);
+            }
+
+            &.placa-2 {
+                transform: scale(0.9) translateX(30px) translateY(-15px);
+            }
+
+            &.placa-3 {}
         }
     }
 }
