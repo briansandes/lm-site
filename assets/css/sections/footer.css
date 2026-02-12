@@ -2,7 +2,9 @@ footer.footer {
     padding-top: 32px;
     padding-bottom: 32px;
     color: white;
-    background: var(--primary-bg-color);
+    background-image: url('../../img/bg-footer.png');
+    background-size: 100%;
+    background-repeat: repeat-y;
 
     a {
         color: white;
