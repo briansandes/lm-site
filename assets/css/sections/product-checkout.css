@@ -1,6 +1,5 @@
 .product-checkout {
     padding-top: 64px;
-    padding-bottom: 64px;
     background-color: #036363;
 
     .section-title {
@@ -22,6 +21,7 @@
         border-radius: 0;
         box-shadow: -8px 8px 0 black;
         border: none;
+        padding: 16px;
     }
 
     .product-cta {
@@ -45,6 +45,7 @@
 
     .product-image-holder {
         text-align: center;
+        margin-bottom: 32px;
 
         .product-image {
             box-shadow: -2px -4px 30px #000000b0;
@@ -69,10 +70,16 @@
             display: inline-block;
             font-size: 1.2rem;
             letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .product-header-holder {
+            max-width: 480px;
+            margin-bottom: 16px;
         }
 
         h2.product-title {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 0;
         }
 
@@ -82,6 +89,8 @@
         }
 
         .product-price-holder {
+            margin-bottom: 16px;
+
             .product-original-price {
                 margin-bottom: 0;
 
@@ -137,6 +146,8 @@
         }
 
         .product-cta-holder {
+            margin-bottom: 32px;
+
             .product-cta {
                 .product-cta-icon {}
             }
@@ -152,7 +163,16 @@
     }
 
     .product-reviews-holder {
+        padding-left: 64px;
+
+        margin-bottom: 48px;
+
         .product-review {
+            max-width: 480px;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            border-bottom: solid 1px #f0f0f0;
+
             .review-header {
                 vertical-align: top;
 
@@ -176,7 +196,7 @@
                     }
 
                     .review-user-name {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
                 }
 
@@ -194,7 +214,8 @@
 
             .review-text-holder {
                 .review-text {
-                    font-weight: 400;
+                    font-weight: 300;
+                    font-size: 1rem;
                 }
             }
         }
@@ -203,12 +224,14 @@
     .product-description-holder {
         .product-features {
             padding-left: 20px;
+            max-width: 480px;
+            margin-bottom: 48px;
 
             li {
                 font-weight: 300;
-                line-height: 1.5rem;
-                margin-bottom: 8px;
-                font-size: 1rem;
+                line-height: 1.4rem;
+                margin-bottom: 16px;
+                font-size: 1.2rem;
             }
         }
     }
@@ -220,6 +243,8 @@
             line-height: 1.4;
             margin-bottom: 2rem;
             color: #111;
+            font-style: italic;
+            text-align: center;
         }
 
         .product-last-cta-title-secondary-line {
@@ -227,6 +252,8 @@
             line-height: 1.5;
             color: #333;
             margin-bottom: 3rem;
+
+            text-align: center;
         }
     }
 
@@ -291,11 +318,83 @@
                     width: 16px;
                     height: 16px;
                 }
+
                 &.slick-active {
                     button {
                         background: #999999;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .product-checkout {
+
+        .product-cta {
+            font-size: 1.2rem;
+            padding: 8px 4px;
+            width: 100%;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            border-bottom: none;
+            margin-bottom: 32px;
+            font-weight: 300;
+        }
+
+
+        .product-image-slider {
+            .slick-arrow {
+                &.slick-prev {
+                    left: -10px;
+                }
+
+                &.slick-next {
+                    right: 24px;
+                }
+            }
+        }
+
+        .macacolandia-noite {
+            display: none;
+        }
+
+        .card {
+            margin-bottom: 80px;
+        }
+
+        .macacolandia-noite-mobile {
+            display: block;
+            width: 100%;
+            height: 220px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            background-image: url('../../img/macacolandia-noite.png');
+        }
+
+        .product-reviews-holder {
+            padding-left: 0;
+        }
+
+        .product-description-holder {
+            .product-features {
+                li {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .product-info-holder {
+            .product-offer {
+                width: calc(100% + 32px);
+                margin-left: -16px;
+                margin-right: -16px;
+                display: block;
+                position: relative;
             }
         }
     }
