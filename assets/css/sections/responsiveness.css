@@ -151,11 +151,11 @@
             }
 
             &.placa-1 {
-                transform: scale(0.8) translateX(60px);
+                transform: scale(0.7) translateX(-40px);
             }
 
             &.placa-2 {
-                transform: scale(0.9) translateX(30px) translateY(-15px);
+                transform: scale(0.85) translateX(30px) translateY(-15px);
             }
 
             &.placa-3 {}

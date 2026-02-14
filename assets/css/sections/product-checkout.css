@@ -1,0 +1,184 @@
+.product-checkout {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-color: #036363;
+
+    .section-title {
+        font-family: "Staatliches", sans-serif;
+        font-size: 4rem;
+        border-bottom: solid 2px #cccccc;
+        margin-bottom: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: 990px;
+        text-align: center;
+        color: white;
+        text-shadow: -4px 4px 0 black;
+        font-weight: 100;
+    }
+
+    .product-image-holder {
+        text-align: center;
+
+        .product-image {
+            box-shadow: -2px -4px 30px #000000b0;
+            width: auto;
+            height: auto;
+            max-height: 375px;
+            display: inline-block;
+        }
+
+        figcaption {
+            display: none;
+        }
+    }
+
+    .product-info-holder {
+        .product-offer {
+            font-family: "Staatliches", sans-serif;
+            background-color: #cd0f0f;
+            color: white;
+            padding: 4px 12px;
+            font-weight: 400;
+            display: inline-block;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        h2.product-title {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+
+        .product-short-description {
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .product-price-holder {
+            .product-original-price {
+                margin-bottom: 0;
+
+                del {
+                    color: #969696;
+                    font-weight: 500;
+                    padding-top: 8px;
+                    display: inline-block;
+                }
+            }
+
+            .product-price {
+                margin-bottom: 0;
+                white-space-collapse: discard;
+
+                .product-price-item {
+                    vertical-align: top;
+                    display: inline-block;
+                    color: black;
+                    font-weight: 500;
+                    font-size: 4rem;
+                    line-height: 4rem;
+
+                    &.product-price-item-currency {
+                        font-size: 1.3rem;
+                        line-height: 2rem;
+                    }
+
+                    .cents {
+                        font-size: 1.3rem;
+                        vertical-align: top;
+                        line-height: 2rem;
+                    }
+                }
+
+                .product-discount {
+                    font-family: "Staatliches", sans-serif;
+                    background-color: #ddffdd;
+                    color: #36a436;
+                    padding: 1px 10px;
+                    font-weight: 400;
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    margin-top: 12px;
+                    margin-left: 8px;
+                }
+            }
+
+            .product-installments {
+                color: #1d1d1d;
+                margin-bottom: 0;
+            }
+        }
+
+        .product-cta-holder {
+            .product-cta {
+                border-radius: 0;
+                font-size: 1.5rem;
+                box-shadow: -4px 4px 0px black;
+                text-transform: uppercase;
+                padding: 8px 16px;
+                background-color: #ffca28;
+                color: black;
+                font-weight: 500;
+            }
+        }
+
+        .product-extra-info-holder {
+            .product-extra-info-list {
+                font-weight: 400;
+                list-style: none;
+                padding: 0;
+            }
+        }
+    }
+
+    .product-reviews-holder {
+        .product-review {
+            .review-header {
+                vertical-align: top;
+
+                .review-image-holder {
+                    width: 48px;
+                    display: inline-block;
+
+                    .review-image {
+                        border-radius: 100%;
+                        display: block;
+                        max-width: 100%;
+                    }
+                }
+
+                .review-user-holder {
+                    margin-left: 16px;
+                    display: inline-block;
+
+                    address {
+                        margin-bottom: 0;
+                    }
+
+                    .review-user-name {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .review-rating-holder {
+                    .review-rating-value {
+                        display: none;
+                    }
+
+                    .review-rating-stars {
+                        color: orange;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .review-text-holder {
+                .review-text {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
