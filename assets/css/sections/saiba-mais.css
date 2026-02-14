@@ -12,6 +12,7 @@ section.saiba-mais {
     .section-text {
         max-width: 600px;
         font-size: 1.25rem;
+        font-weight: 300;
     }
 
     .mobile-gorivaldo {
