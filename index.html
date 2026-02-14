@@ -484,6 +484,8 @@
 
     .v-centered-container.hero-content {}
   </style>
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link href="assets/css/styles.css" rel="stylesheet" />
   <script>window.scrollTo(0, 0);</script>
 </head>
@@ -795,7 +797,7 @@
 
                       <div class="product-cta-holder">
                         <a href="#" class="btn product-cta" role="button">
-                          Comprar o box completo
+                          <img src="assets/img/carrinho.png" class="product-cta-icon" /> Comprar o box completo
                         </a>
                       </div>
 
@@ -949,14 +951,28 @@
               <!-- last cta row -->
               <div class="row">
                 <div class="col">
-                  <p class="product-last-cta-title">
-                    Cada mês que passa, você paga o preço.<br />
-                    Juros não esperam. Decisão também não.
-                  </p>
-                  <div class="product-cta-holder">
-                    <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page_lancamento&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=checkout_cta" target="_blank" role="button">
-                      Quero o box completo
-                    </a>
+                  <div class="product-last-cta-holder">
+                    <div class="product-last-cta-title-holder">
+                      <p class="product-last-cta-title-main-line">
+                        Cada mês que passa,
+                        <br />
+                        <strong>você paga o preço.</strong>
+                      </p>
+
+                      <hr />
+
+                      <p class="product-last-cta-title-secondary-line">
+                        Juros não esperam.
+                        <br />
+                        <strong>Decisão também não.</strong>
+                      </p>
+                    </div>
+                    <div class="product-cta-holder">
+                      <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page_lancamento&utm_medium=cta&utm_campaign=ebook_vendas&utm_content=checkout_cta"
+                        target="_blank" role="button" class="btn product-cta">
+                        <img src="assets/img/carrinho.png" class="product-cta-icon" /> Quero o box completo
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1116,13 +1132,16 @@
               <h6 class="text-center">SIGA NOS</h6>
               <div class="social-icons">
                 <a href="https://www.instagram.com/logica.macaquista/" target="_blank">
-                  <img src="assets/img/icon-instagram.png" alt="https://www.instagram.com/logica.macaquista/" title="Instagram @logica.macaquista"  />
+                  <img src="assets/img/icon-instagram.png" alt="https://www.instagram.com/logica.macaquista/"
+                    title="Instagram @logica.macaquista" />
                 </a>
                 <a href="https://www.tiktok.com/@logica.macaquista" target="_blank">
-                  <img src="assets/img/icon-tiktok.png" alt="https://www.tiktok.com/@logica.macaquista" title="TikTok @logica.macaquista" />
+                  <img src="assets/img/icon-tiktok.png" alt="https://www.tiktok.com/@logica.macaquista"
+                    title="TikTok @logica.macaquista" />
                 </a>
                 <a href="https://www.youtube.com/@logica.macaquista" target="_blank">
-                  <img src="assets/img/icon-youtube.png" alt="https://www.youtube.com/@logica.macaquista" title="YouTube @logica.macaquista" />
+                  <img src="assets/img/icon-youtube.png" alt="https://www.youtube.com/@logica.macaquista"
+                    title="YouTube @logica.macaquista" />
                 </a>
               </div>
             </div>
@@ -1133,6 +1152,9 @@
   </footer>
   <!-- 10th feb. 2026 moved loader to index file -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+
   <script>window.scrollTo(0, 0);</script>
   <script>
     function introAnimation() {
