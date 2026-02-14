@@ -485,8 +485,9 @@
     .v-centered-container.hero-content {}
   </style>
 
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link href="assets/css/styles.css" rel="stylesheet" />
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script>window.scrollTo(0, 0);</script>
 </head>
 
@@ -731,13 +732,76 @@
                 <!-- product image -->
                 <div class="col-sm-6 col-product-image">
                   <div class="product-image-holder">
-                    <figure>
-                      <img src="assets/img/box-5-ebooks.jpg" alt="Finanças Descomplicadas"
-                        title="Finanças Descomplicadas" itemprop="image" class="product-image" />
-                      <figcaption class="visually-hidden">
-                        Box de 5 eBooks Finanças Descomplicadas
-                      </figcaption>
-                    </figure>
+                    <div class="product-image-slider">
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
+                          <img src="assets/img/box-5-ebooks.jpg" alt="Finanças Descomplicadas"
+                            title="Finanças Descomplicadas" itemprop="image" class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
+                          <img src="assets/img/ebooks/comece-a-investir.png" alt="Finanças Descomplicadas"
+                            title="Finanças Descomplicadas" itemprop="image" class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
+                          <img src="assets/img/ebooks/controle-total-dos-seus-gastos.png" alt="Finanças Descomplicadas"
+                            title="Finanças Descomplicadas" itemprop="image" class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
+                          <img src="assets/img/ebooks/livre-se-das-dividas-pra-sempre.png" alt="Finanças Descomplicadas"
+                            title="Finanças Descomplicadas" itemprop="image" class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
+                          <img src="assets/img/ebooks/orcamento-inteligente-e-mentalidade-financeira.png"
+                            alt="Finanças Descomplicadas" title="Finanças Descomplicadas" itemprop="image"
+                            class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
+                          <img src="assets/img/ebooks/sua-reserva-de-emergencia-em-tempo-recorde.png"
+                            alt="Finanças Descomplicadas" title="Finanças Descomplicadas" itemprop="image"
+                            class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                    </div>
                   </div>
                 </div>
                 <!-- product image -->
@@ -922,7 +986,8 @@
                 <!-- product description col -->
                 <div class="col-sm-6 col-product-description">
                   <div class="product-description-holder">
-                    <h3 class="product-description-title">Ou você controla seu dinheiro,<br />ou ele controla você.</h3>
+                    <h3 class="product-description-title">Ou você controla seu dinheiro,<br />ou ele controla você.
+                    </h3>
                     <ul class="product-features">
                       <li>
                         Corte gastos. Mate dívidas. Crie reserva. Invista com lógica.
@@ -1152,8 +1217,8 @@
   </footer>
   <!-- 10th feb. 2026 moved loader to index file -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-				
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
   <script>window.scrollTo(0, 0);</script>
   <script>
@@ -1174,6 +1239,13 @@
         document.getElementById("hero-content").classList.add('loaded');
         console.log('called callback', new Date(Date.now()));
         document.body.style.overflow = "auto";
+
+        $(document).ready(function () {
+          $('.product-image-slider').slick({
+            dots: true
+          });
+        });
+
       }, 1000);
     }
 
