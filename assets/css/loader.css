@@ -1,0 +1,140 @@
+body {
+    overflow: hidden;
+    &.loaded {
+        section.saiba-mais,
+        section.o-ebook,
+        section.logica-macaquista,
+        section.checkout,
+        section.faq,
+        footer.footer {
+            display: block;
+        }
+    }
+}
+
+/* hiding sections */
+section.saiba-mais,
+section.o-ebook,
+section.logica-macaquista,
+section.checkout,
+section.faq,
+footer.footer {
+    display: none;
+}
+
+section.hero {
+    .bananas-hero-holder {
+        transition: all .8s ease;
+        opacity: 0;
+        transform: translateY(60px);
+    }
+}
+
+body.loaded {
+    .bananas-hero-holder {
+        transition: all .8s ease;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.hero-content {
+    opacity: 0;
+    transition: opacity .8s ease;
+
+    h2,
+    p,
+    a,
+    img {
+        transition: all .8s ease;
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    &.loaded {
+        opacity: 1;
+
+        h2,
+        p,
+        a,
+        img {
+            transition: all .8s ease;
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}
+
+.main-loader {
+    position: absolute;
+    top: 40vh;
+    width: 100%;
+    z-index: 9999;
+    transition: all .8s ease;
+
+    .hero-logo-holder {
+        h1.hero-logo {
+            font-size: 5rem;
+            transition: all .8s ease;
+        }
+
+        .hero-logo-sub {
+            font-size: 4rem;
+            opacity: 0;
+            transition: all .8s ease;
+        }
+    }
+
+
+
+    &.loaded {
+        top: 32px;
+
+        .hero-logo-holder {
+            .hero-logo {
+                font-size: 2.5rem;
+            }
+
+            .hero-logo-sub {
+                font-size: 2rem;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 991px) {
+    .main-loader {
+        .hero-logo-holder {
+            h1.hero-logo {
+                font-size: 3rem;
+                line-height: 3rem;
+                margin-bottom: 0;
+            }
+
+            .hero-logo-sub {
+                font-size: 2rem;
+                line-height: 1.5rem;
+            }
+        }
+
+
+
+        &.loaded {
+            top: 16px;
+
+            .hero-logo-holder {
+                .hero-logo {
+                    font-size: 2rem;
+                    line-height: 1.5rem;
+                }
+
+                .hero-logo-sub {
+                    font-size: 1.5rem;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

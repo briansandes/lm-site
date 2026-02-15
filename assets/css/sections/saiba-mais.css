@@ -1,0 +1,66 @@
+section.saiba-mais {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+
+    .section-title {
+        font-size: 3rem;
+        border-bottom: solid 2px #cccccc;
+        margin-bottom: 32px;
+    }
+
+    .section-text {
+        max-width: 600px;
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    .mobile-gorivaldo {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 991px) {
+    section.saiba-mais {
+        padding-top: 100px;
+        padding-bottom: 32px;
+
+        .section-title {
+            vertical-align: top;
+            text-align: left;
+            font-size: 2rem;
+            padding-bottom: 16px;
+        }
+
+        .section-text {
+            max-width: none;
+            font-size: 1rem;
+        }
+
+        .mobile-gorivaldo {
+            display: inline-block;
+            vertical-align: top;
+            height: 110px;
+            margin-right: 18px;
+            float: left;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .section-title-holder {
+            vertical-align: top;
+            text-align: right;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section.saiba-mais {
+        .mobile-gorivaldo {
+            display: none;
+        }
+    }
+}

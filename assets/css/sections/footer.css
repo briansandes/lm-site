@@ -1,0 +1,44 @@
+footer.footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: white;
+    background-image: url('../../img/bg-footer.png');
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: repeat-y;
+
+    a {
+        color: white;
+    }
+
+    .placa {
+        width: 240px;
+        height: 160px;
+        background-image: url('../../img/placas-footer.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 16px 24px;
+        margin: 0 auto;
+
+        a,
+        h6,
+        p {
+
+            font-family: "Staatliches", sans-serif;
+            color: black;
+            font-size: 1.7rem;
+            font-weight: 100;
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        img {
+            max-width: 50px;
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Staatliches", sans-serif;
+}
+
+.lm-dark-bg {
+    background-color: var(--primary-bg-color);
+}
+
+.tilt {
+    display: inline-block;
+    animation: tiltAnim 1s steps(1) infinite;
+}
+
+@keyframes tiltAnim {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.hero-logo-holder {
+    text-align: center;
+    color: white;
+
+    .hero-logo {
+        font-size: 2.5rem;
+
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: -2px 2px 0px black;
+        margin-bottom: 0;
+    }
+
+    .hero-logo-sub {
+        font-family: "Marck Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 2rem;
+        text-shadow: -2px 2px 0px black;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 991px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+/* non mobile */
+@media screen and (min-width: 992px) {
+}
