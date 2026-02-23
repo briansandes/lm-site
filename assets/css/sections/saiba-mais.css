@@ -11,6 +11,10 @@ section.saiba-mais {
 
     .section-text {
         max-width: 600px;
+    }
+
+    .section-text,
+    ul {
         font-size: 1.25rem;
         font-weight: 300;
     }
@@ -35,6 +39,10 @@ section.saiba-mais {
 
         .section-text {
             max-width: none;
+            font-size: 1rem;
+        }
+
+        ul {
             font-size: 1rem;
         }
 
