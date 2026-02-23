@@ -2,6 +2,15 @@
 <html lang="pt-br">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYR0J8GF2G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QYR0J8GF2G');
+  </script>
   <meta charset="UTF-8">
   <title>Finanças Descomplicadas | Lógica Macaquista</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -335,12 +344,13 @@
         }
       }
 
-      .gorivaldo-hero-holder {
+      .image-hero-holder {
         position: relative;
         max-width: 520px;
         margin: 0 auto;
         display: block;
         animation: float 4s ease-in-out infinite;
+        text-align: center;
 
         .hero-img,
         .hero-img-blink {
@@ -353,28 +363,27 @@
         .hero-img {
           position: relative;
           z-index: 5;
-
-        }
-
-        .hero-img-blink {
-          z-index: 0;
+          max-height: 60vh;
+          width: auto;
+          display: inline-block;
         }
       }
 
       h2.title {
-        font-size: 6rem;
+        font-size: 5.5rem;
         text-shadow: -4px 4px 0px black;
+        line-height: 6rem;
       }
 
       .text {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 1.8rem;
         text-shadow: -2px 2px 0px black;
       }
 
       .cta {
         border-radius: 0;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         box-shadow: -4px 4px 0px black;
         text-transform: uppercase;
         padding: 8px 16px;
@@ -456,6 +465,7 @@
 
         .cta {
           font-size: 0.9rem;
+          padding-inline: 5px;
 
           &.cta-purchase {
             margin-left: 8px;
@@ -526,21 +536,22 @@
                         <div class="text-holder">
                           <div class="text">
                             <p>
-                              Aprenda finanças de forma simples,<br>
-                              direta e sem linguagem complicada
+                              O box com 5 eBooks práticos para colocar
+                              seu dinheiro no controle, do gasto ao investimento.
                             </p>
 
                             <p>
-                              Entenda como o dinheiro funciona na prática sem nunca ter estudado economia.
+                              Sem economês. Sem teorias infinitas.<br />
+                              Você lê e aplica: cada capítulo termina com uma missão prática.
                             </p>
                             <p>
-                              Todos 5 ebooks de educação financeira
+                              Gastos • Dívidas • Reserva • Investimentos • Mentalidade
                             </p>
                           </div>
                         </div>
                         <div class="cta-holder">
                           <a href="#saiba-mais" class="btn btn-light cta cta-learn-more">
-                            Saiba mais
+                            Ver o conteúdo
                           </a>
                           <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_lancamento&utm_content=hero_cta"
                             class="btn btn-info cta cta-purchase" target="_blank">
@@ -554,11 +565,8 @@
                   <div class="col-md-6 col-feature">
                     <div class="feature-holder">
                       <div class="background">
-                        <div class="gorivaldo-hero-holder">
-                          <img src="assets/img/novo-gorivaldo-hero-blink.png" id="g-hero-blink"
-                            class="img-fluid hero-img-blink" alt="Finanças Descomplicadas | Lógica Macaquista"
-                            title="Finanças Descomplicadas | Lógica Macaquista" />
-                          <img src="assets/img/novo-gorivaldo-hero.png" id="g-hero-bg" class="img-fluid hero-img"
+                        <div class="image-hero-holder">
+                          <img src="assets/img/box-ebook-hero.png" id="g-hero-bg" class="img-fluid hero-img"
                             alt="Finanças Descomplicadas | Lógica Macaquista"
                             title="Finanças Descomplicadas | Lógica Macaquista" />
                         </div>
@@ -578,38 +586,39 @@
     <section class="saiba-mais" id="saiba-mais">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 hide-mobile">
-            <img src="assets/img/saiba-mais-financas.png" class="img-fluid" alt="Macacolândia" title="Macacolândia" />
-          </div>
-          <div class="col-lg-1 hide-mobile"></div>
           <div class="col-lg-6">
             <h2 class="section-title">
               <span class="mobile-gorivaldo">
-                <img src="assets/img/saiba-mais-financas.png" class="img-fluid" alt="Macacolândia"
+                <img src="assets/img/ilustracao-saiba-mais.png" class="img-fluid" alt="Macacolândia"
                   title="Macacolândia" />
               </span>
               <span class="section-title-holder">
-                Gorivaldo e Finanças Descomplicadas
+                Seu problema não é falta de dinheiro, é falta de clareza
               </span>
             </h2>
             <p class="section-text">
-              Na <strong>Macacolândia</strong> trocando folhas por bananas,
-              <strong>Gorivaldo</strong>
-              aprendeu a organizar seu dinheiro, sair das dívidas
-              e começar a investir de verdade — <strong>sem planilhas chatas,
-                sem economês e sem gurus malucos</strong>.
+              Quando você não enxerga o caminho, você toma decisão no impulso.
+              E impulso é caro: <strong>compra errada</strong>, <strong>parcela longa</strong>,
+              <strong>juros</strong> “pequenos” que viram <strong>bola de neve</strong>.
             </p>
+            <ul>
+              <li>Você fecha o mês sem saber pra onde foi o dinheiro</li>
+
+              <li>Você paga conta atrasada e chama isso de “normal”</li>
+
+              <li>Você parcela porque “cabe”, e descobre tarde que não cabia</li>
+
+              <li>Você tem medo de investir porque parece complexo</li>
+            </ul>
             <p class="section-text">
-              Através da coleção <strong>Finanças Descomplicadas</strong>, reunimos conteúdos diretos ao
-              ponto que guiam o leitor desde o controle básico dos gastos
-              até os <strong>primeiros investimentos</strong>, passando pela <strong>eliminação de dívidas</strong>,
-              <strong>criação de reserva de emergência</strong> e desenvolvimento de uma <strong>mentalidade
-                financeira saudável</strong>.
+              O box existe pra acabar com isso — <strong>começando pelo básico que ninguém te ensinou na
+                escola</strong>.
             </p>
-            <p class="section-text">
-              Cada material foi estruturado para resolver uma etapa específica da jornada
-              financeira, na ordem certa, <b>sem linguagem difícil ou teoria desnecessária</b>.
-            </p>
+          </div>
+
+          <div class="col-lg-6 hide-mobile">
+            <img src="assets/img/ilustracao-saiba-mais.png" class="img-fluid" alt="Finanças Descomplicadas"
+              title="Finanças Descomplicadas" />
           </div>
         </div>
       </div>
@@ -638,9 +647,9 @@
                 <div class="item-content" style="border-color: #0091ea;">
                   <h3>📘 Controle Total dos Seus Gastos</h3>
                   <p>
-                    Entenda exatamente para onde suas folhas estão indo.
-                    Elimine gastos invisíveis e monte um orçamento realista,
-                    simples e funcional — sem culpa, sem confusão e sem planilhas mirabolantes.
+                    Um raio-x real do seu dinheiro onde você encontra os vazamentos.
+                    Depois separa necessidade vs desejo, cria metas possíveis e monta uma planilha básica (sem firula).
+                    Fecha com checklist pra manter o controle no automático.
                   </p>
                 </div>
               </li>
@@ -652,10 +661,9 @@
                 <div class="item-content" style="border-color: #ff9f12;">
                   <h3>📙 Livre-se das Dívidas Pra Sempre</h3>
                   <p>
-                    Aprenda como funciona o jogo dos juros,
-                    descubra estratégias reais de negociação
-                    e saiba exatamente quais dívidas pagar primeiro
-                    para sair do vermelho de forma definitiva.
+                    Você lista tudo que deve com clareza (valor, juros, vencimento).
+                    Aprende a negociar passo a passo, escolhe a melhor estratégia de pagamento e evita cair de novo.
+                    Inclui exercício prático + modelo de acordo pra usar na negociação.
                   </p>
                 </div>
               </li>
@@ -667,10 +675,9 @@
                 <div class="item-content" style="border-color: #9ccc65;">
                   <h3>📗 Reserva de Emergência em Tempo Recorde</h3>
                   <p>
-                    Um plano simples para criar sua primeira reserva,
-                    mesmo com renda apertada.
-                    Passos práticos, metas claras e segurança financeira
-                    para imprevistos da vida.
+                    Aqui você entende o que é reserva (e o que não é) e define o seu valor ideal.
+                    Aprende onde guardar com segurança e como poupar mesmo com renda apertada.
+                    Inclui planilha + checklist de hábito pra manter consistência.
                   </p>
                 </div>
               </li>
@@ -682,10 +689,10 @@
                 <div class="item-content" style="border-color: #f44336;">
                   <h3>📕 Comece a Investir Sem Complicações</h3>
                   <p>
-                    Invista com segurança mesmo começando do zero.
-                    Aprenda sobre Tesouro Selic, CDB, LCI, LCA
-                    e construa patrimônio sem riscos desnecessários
-                    ou termos difíceis.
+                    Antes de investir, você faz um check-up pra não investir na hora errada.
+                    Entende o básico de renda fixa (Tesouro, CDB etc.), descobre seu perfil e aprende a começar com
+                    pouco.
+                    Fecha com armadilhas comuns + glossário + simulação de 1º investimento.
                   </p>
                 </div>
               </li>
@@ -697,9 +704,10 @@
                 <div class="item-content" style="border-color: #ffca28;">
                   <h3>📒 Orçamento Inteligente & Mentalidade Financeira</h3>
                   <p>
-                    A base de tudo: comportamento, hábitos e controle emocional.
-                    Aprenda a parar de se sabotar financeiramente
-                    e construa uma relação saudável e próspera com o dinheiro.
+                    Aqui é o que faz o plano durar mais de duas semanas.
+                    Você monta um orçamento que usa de verdade, reduz sabotagem emocional e identifica os erros mentais
+                    que te fazem gastar mal.
+                    Inclui exercício de mentalidade + modelo de orçamento comportamental.
                   </p>
                 </div>
               </li>
@@ -758,7 +766,29 @@
                       <!-- item -->
                       <div class="image-item">
                         <figure>
+                          <img src="assets/img/ebooks/ebook-pagina-1.jpg" alt="Finanças Descomplicadas"
+                            title="Finanças Descomplicadas" itemprop="image" class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
                           <img src="assets/img/ebooks/controle-total-dos-seus-gastos.jpg" alt="Finanças Descomplicadas"
+                            title="Finanças Descomplicadas" itemprop="image" class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
+                          <img src="assets/img/ebooks/ebook-pagina-2.jpg" alt="Finanças Descomplicadas"
                             title="Finanças Descomplicadas" itemprop="image" class="product-image" />
                           <figcaption class="visually-hidden">
                             Finanças Descomplicadas
@@ -780,9 +810,31 @@
                       <!-- item -->
                       <div class="image-item">
                         <figure>
+                          <img src="assets/img/ebooks/ebook-pagina-3.jpg" alt="Finanças Descomplicadas"
+                            title="Finanças Descomplicadas" itemprop="image" class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
                           <img src="assets/img/ebooks/orcamento-inteligente-e-mentalidade-financeira.jpg"
                             alt="Finanças Descomplicadas" title="Finanças Descomplicadas" itemprop="image"
                             class="product-image" />
+                          <figcaption class="visually-hidden">
+                            Finanças Descomplicadas
+                          </figcaption>
+                        </figure>
+                      </div>
+                      <!-- end of item -->
+                      <!-- item -->
+                      <div class="image-item">
+                        <figure>
+                          <img src="assets/img/ebooks/ebook-pagina-4.jpg" alt="Finanças Descomplicadas"
+                            title="Finanças Descomplicadas" itemprop="image" class="product-image" />
                           <figcaption class="visually-hidden">
                             Finanças Descomplicadas
                           </figcaption>
@@ -810,8 +862,9 @@
                 <div class="col-sm-6 col-product-info">
                   <div class="product-info-holder">
                     <div class="product-offer">
-                      OFERTA DE LANÇAMENTO 30% OFF
+                      OFERTA MARÇO SEM DÍVIDAS 30% OFF
                     </div>
+                    <div class="product-offer-muted">válido até 01/03/2026</div>
                     <header>
                       <div class="product-header-holder">
                         <h2 class="product-title" itemprop="name">
@@ -833,7 +886,7 @@
                         <!-- preco original -->
                         <p class="product-original-price">
                           <del>
-                            <span>R$ 97,20</span>
+                            <span>R$ 98,15</span>
                           </del>
                         </p>
                         <!-- preco original -->
@@ -955,11 +1008,11 @@
                           <div class="product-review">
                             <div class="review-header">
                               <div class="review-image-holder">
-                                <img src="content/reviews/pb.jpg" class="review-image" />
+                                <img src="content/reviews/jbs.jpg" class="review-image" />
                               </div>
                               <div class="review-user-holder">
                                 <address itemprop="author">
-                                  <div class="review-user-name">@_baraldini</div>
+                                  <div class="review-user-name">@julianesbarros</div>
                                 </address>
                                 <div class="review-rating-holder" itemprop="reviewRating" itemscope
                                   itemtype="https://schema.org/Rating">
@@ -970,8 +1023,7 @@
                             </div>
                             <div class="review-text-holder">
                               <div class="review-text" itemprop="reviewBody">
-                                lorem ipsum dolor sit amet consectetur adipiscing
-                                elit sed do eiusmod tempor incididunt ut labore
+                                Direto ao ponto e sem economês. Fiz o passo a passo e finalmente fechei um mês no azul.
                               </div>
                             </div>
                           </div>
@@ -987,27 +1039,30 @@
                 <!-- product description col -->
                 <div class="col-sm-6 col-product-description order-1 order-sm-2">
                   <div class="product-description-holder">
-                    <h3 class="product-description-title">Ou você controla seu dinheiro,<br />ou ele controla você.
+                    <h3 class="product-description-title">O que você recebe hoje:
                     </h3>
                     <ul class="product-features">
                       <li>
-                        Corte gastos. Mate dívidas. Crie reserva. Invista com lógica.
+                        5 eBooks (cerca de 188 páginas)
                       </li>
                       <li>
-                        Sem teoria inútil, só métodos e práticas em mais de 150 páginas.
+                        Missões práticas no final de cada eBook
+
                       </li>
                       <li>
-                        Juros, fluxo de caixa, prioridade de pagamento e renda fixa explicados de forma objetiva.
+                        Tabelas prontas (gastos, dívidas, reserva e orçamento)
                       </li>
                       <li>
-                        Conteúdo baseado em fundamentos reais de educação financeira,
-                        economia comportamental e planejamento aplicado.
+                        Checklists pra executar sem travar
                       </li>
                       <li>
-                        Tudo isso condensado em 5 eBooks com uma didática para todos públicos e idades.
+                        Template de negociação (eBook dívidas)
                       </li>
                       <li>
-                        Acesso ao eBook liberado na hora.
+                        Glossário + simulação do 1º investimento (eBook investimentos)
+                      </li>
+                      <li>
+                        Acesso a leitura dos eBooks por qualquer dispositivo
                       </li>
                     </ul>
                   </div>
@@ -1017,37 +1072,44 @@
               <!-- product second row -->
 
 
-              <!-- last cta row -->
-              <div class="row">
+              <div class="row mobile-only">
                 <div class="col">
                   <div class="product-last-cta-holder">
                     <div class="product-last-cta-title-holder">
-                      <p class="product-last-cta-title-main-line">
-                        Cada mês que passa,
-                        <br />
-                        <strong>você paga o preço.</strong>
+                      <p class="product-last-cta-title-main-line text-center mb-5 staatliches-regular">
+                        O custo de adiar, é <u>juros</u> e <u>bagunça</u>.<br />
+                        Resolva por etapas, do jeito simples.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4 col-sm-5 last-cta-col-img">
+                  <img src="assets/img/checkout-stonks.png" class="img-fluid last-cta-img" />
+                </div>
+
+                <div class="col-8 col-sm-7 last-cta-col-text">
+                  <div class="product-last-cta-holder">
+                    <div class="product-last-cta-title-holder">
+                      <p class="product-last-cta-title-main-line hide-mobile staatliches-regular">
+                        O custo de adiar, é <u>juros</u> e <u>bagunça</u>.<br />
+                        Resolva por etapas, do jeito simples.
                       </p>
                       <p class="product-last-cta-title-secondary-line">
-                        Juros não esperam.
-                        <br />
-                        <strong>Decisão também não.</strong>
+                        Acesso imediato • 7 dias de garantia
                       </p>
                     </div>
                     <div class="product-cta-holder text-center">
                       <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_lancamento&utm_content=checkout_cta2"
-                        target="_blank" role="button" class="btn product-cta">
+                        target="_blank" role="button" class="btn product-cta last-cta">
                         <img src="assets/img/carrinho.png" class="product-cta-icon" /> Quero o box completo
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col text-center">
-                  <img src="assets/img/apontando.png" class="img-fluid" style="max-width: 320px; margin: 0 auto 32px;" />
-                </div>
-              </div>
-              <!-- last cta row -->
             </div>
           </div>
         </div>
@@ -1056,6 +1118,7 @@
       <div class="macacolandia-noite-mobile"></div>
     </article>
   </main>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-mobile-container">
@@ -1106,7 +1169,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-
   <script>window.scrollTo(0, 0);</script>
   <script>
     function introAnimation() {
@@ -1155,33 +1217,6 @@
         }, 500);
       }, 200);
     });
-
-    const g = document.getElementById("g-hero-blink");
-
-    function blink(twice = false) {
-      setTimeout(() => {
-        g.style.zIndex = '10';
-        setTimeout(() => {
-          g.style.zIndex = '0';
-
-          let blink_once = Math.round(Math.random()) % 2 === 0;
-
-          if (blink_once) {
-            setTimeout(() => { blink(false) }, Math.random() * 4000 + 2000);
-          } else {
-            setTimeout(() => {
-              g.style.zIndex = '10';
-              setTimeout(() => {
-                g.style.zIndex = '0';
-                setTimeout(() => { blink(true) }, Math.random() * 10000 + 2000);
-              }, 200);
-            }, 160);
-          }
-        }, 120);
-      }, 60);
-    }
-
-    setTimeout(blink, 5000);
   </script>
 </body>
 
