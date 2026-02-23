@@ -1,0 +1,19 @@
+$breakpoints: (
+  desktop: 1400px,
+  laptop: 1399.98px,
+  medium: 1199.98px,
+  tablet: 991.98px,
+  mobile-large: 767.98px,
+  mobile: 575.98px
+);
+
+// Responsive mixin
+@mixin respond($device) {
+  @if map-has-key($breakpoints, $device) {
+    @media screen and (max-width: map-get($breakpoints, $device)) {
+      @content;
+    }
+  } @else {
+    @error "Unknown breakpoint: `#{$device}`. Check _mixins.scss.";
+  }
+}
