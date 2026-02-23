@@ -257,7 +257,6 @@
             line-height: 1.4;
             margin-bottom: 2rem;
             color: #111;
-            font-style: italic;
             text-align: center;
         }
 
@@ -342,6 +341,14 @@
         }
     }
 
+    .last-cta-col-img {
+        position: relative;
+
+        .last-cta-img {
+            margin-left: -16px;
+        }
+    }
+
     .product-last-cta-holder {
         margin-bottom: 32px;
     }
@@ -420,6 +427,37 @@
                 margin-right: -16px;
                 display: block;
                 position: relative;
+            }
+        }
+
+        .product-last-cta-title-holder {
+            .product-last-cta-title-main-line {
+                font-size: 1.2rem;
+                margin-bottom: 1.6rem;
+            }
+
+            .product-last-cta-title-secondary-line {
+                font-size: 0.8rem;
+                margin-bottom: 0.3rem;
+            }
+        }
+
+        .last-cta-col-img {
+            .last-cta-img {
+                margin-left: 0;
+                position: absolute;
+                left: -4px;
+                bottom: 0;
+            }
+        }
+
+        .last-cta {
+            font-size: 0.8rem;
+            padding: 8px 2px;
+            width: 100%;
+
+            .product-cta-icon {
+                width: 16px;
             }
         }
     }
