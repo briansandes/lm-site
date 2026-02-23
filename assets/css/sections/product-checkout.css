@@ -60,6 +60,13 @@
         }
     }
 
+
+
+    h3.product-description-title,
+    h3.product-reviews-title {
+        margin-bottom: 24px;
+    }
+
     .product-info-holder {
         .product-offer {
             font-family: "Staatliches", sans-serif;
@@ -70,7 +77,14 @@
             display: inline-block;
             font-size: 1.2rem;
             letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .product-offer-muted {
+            font-weight: 300;
             margin-bottom: 16px;
+            color: #888888;
+            font-size: 0.8rem;
         }
 
         .product-header-holder {
@@ -80,7 +94,7 @@
 
         h2.product-title {
             font-size: 2.5rem;
-            margin-bottom: 0;
+            margin-bottom: 12px;
         }
 
         .product-short-description {
@@ -335,6 +349,12 @@
 
 @media screen and (max-width: 767px) {
     .product-checkout {
+
+        .product-image-holder {
+            .product-image {
+                max-height: 280px;
+            }
+        }
 
         .product-cta {
             font-size: 1.2rem;
