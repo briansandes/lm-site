@@ -31,3 +31,6 @@ function watchFiles() {
 exports.styles = styles;
 exports.dev = series(styles, watchFiles);
 exports.default = exports.dev;
+
+// once in a while, run:
+// npx sass --load-path=node_modules assets/scss/bootstrap-custom.scss assets/css/bootstrap-custom.css --style=compressed --no-source-map

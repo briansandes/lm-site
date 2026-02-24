@@ -19,22 +19,31 @@
   <link rel="canonical" href="https://ebook.logicamacaquista.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link href="assets/css/bootstrap-custom.css" rel="stylesheet" /> -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap-custom.css" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-  href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
-  rel="stylesheet">
-  
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <style type="text/css">
-      <?php include 'assets/css/in-page.css'; ?>
+    href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
+    rel="stylesheet">
 
+  <!-- slick -->
+  <link rel="preload" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style"
+    onload="this.rel='stylesheet'">
+  <!-- bootstrap -->
+  <!-- styles -->
+  <link rel="preload" href="assets/css/styles.css" as="style" onload="this.rel='stylesheet'">
+  <!-- noscript -->
+  <noscript>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </noscript>
+  <style type="text/css">
+    <?php include 'assets/css/in-page.css'; ?>
   </style>
 
-  <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
 
 <body class="loaded">
@@ -49,6 +58,13 @@
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.section-product-checkout__product-image-slider').slick({
+        dots: true
+      });
+    });
+  </script>
 </body>
 
 </html>
