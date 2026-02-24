@@ -214,8 +214,8 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                                         </ul>
                                     </div>
                                     <div class="product-cta-holder">
-                                        <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_lancamento&utm_content=checkout_cta2"
-                                            class="btn cta cta-primary cta-checkout-1" role="button">
+                                        <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_lancamento&utm_content=checkout_cta"
+                                            class="btn cta cta-primary cta-checkout-1" role="button" target="_blank">
                                             <img src="<?php echo $cart; ?>" alt="Comprar o box completo"
                                                 title="Comprar o box completo" class="cta-left-icon cta-icon" /> Comprar o box
                                             completo
