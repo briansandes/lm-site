@@ -4,11 +4,11 @@ $star = 'data:image/png;base64,R0lGODlhKAAoAPcnAAAAAI2CAOjUAOnWAPPfAPXhAPfjAPnlA
 <header>
     <div class="main-loader" id="main-loader">
         <div class="main-loader__logo-holder">
-            <h1 class="main-loader__logo">
+            <h2 class="main-loader__logo">
                 <img src="<?php echo $star; ?>" class="main-loader__star" />
                 LÓGICA MACAQUISTA
                 <img src="<?php echo $star; ?>" class="main-loader__star" />
-            </h1>
+            </h2>
             <p class="main-loader__logo-sub" id="main-loader__logo-sub">
                 apresenta
             </p>

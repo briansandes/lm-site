@@ -3,8 +3,7 @@ section.section-hero {
     height: 100vh;
     display: flex;
     overflow: hidden;
-    background-size: 30px 60px;
-    background-image: repeating-linear-gradient(45deg, #52a8a8 0, #399595 1px, #399595 0, #399595 50%);
+    background-color: #3a9797;
 
     .section-hero__bg-bottom {
         position: absolute;
@@ -14,5 +13,45 @@ section.section-hero {
 
     .section-hero__bg-bottom-mobile {
         display: none;
+    }
+
+    .v-centered-container {
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        width: 100%;
+
+        .col-text {
+            display: flex;
+
+            .content-holder {
+                display: grid;
+                align-items: center;
+            }
+
+            .cta-purchase {
+                margin-left: 8px;
+            }
+        }
+
+        .col-image {
+            .section-hero__image {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    }
+
+    h1.section-title {
+        font-size: 5.2rem;
+        text-shadow: var(--shadow-2);
+        line-height: 5.8rem;
+    }
+
+    .section-text {
+        text-shadow: var(--shadow-1);
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: 500;
     }
 }

@@ -9,9 +9,9 @@
                         <div class="content-holder">
                             <div class="v-content">
                                 <div class="section-title-holder">
-                                    <h2 class="section-title">
+                                    <h1 class="section-title">
                                         Finanças Descomplicadas
-                                    </h2>
+                                    </h1>
                                 </div>
                                 <div class="section-text-holder">
                                     <div class="section-text">
