@@ -19,18 +19,21 @@
   <link rel="canonical" href="https://ebook.logicamacaquista.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+      <?php include 'assets/css/bootstrap-custom.css'; ?>
+    </style>
+
+    <!-- <link href="assets/css/bootstrap-custom.css" rel="stylesheet" /> -->
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
-    rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <style type="text/css">
+  href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
+  rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <style type="text/css">
       <?php include 'assets/css/in-page.css'; ?>
     </style>
 
