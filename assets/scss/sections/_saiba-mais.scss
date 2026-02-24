@@ -1,0 +1,19 @@
+section.section-saiba-mais {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+    background-image: url('../img/ilustracao-saiba-mais.webp');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 800px;
+
+    .section-title {
+        font-size: 3rem;
+        border-bottom: solid 2px #cccccc;
+        margin-bottom: 32px;
+    }
+
+    .col-image {
+        display: none;
+    }
+}
