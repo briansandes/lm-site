@@ -31,7 +31,7 @@ section.section-o-ebook {
         margin-right: auto;
         max-width: 800px;
 
-        li {
+        li.benefit-item-list {
             margin-bottom: 32px;
 
             .item-content {
@@ -39,6 +39,19 @@ section.section-o-ebook {
                 padding: 16px;
                 border-left: solid 8px;
                 box-shadow: 0px 4px 0 black;
+
+                p {
+                    margin-bottom: 12px;
+                }
+
+                ul {
+                    list-style: disc;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    li {
+                        margin-bottom: 8px;
+                    }
+                }
             }
 
             &:nth-child(odd) {
@@ -76,7 +89,7 @@ section.section-o-ebook {
         padding-bottom: 32px;
 
         .section-title {
-            font-size: 1.6rem;
+            font-size: 2rem;
             padding-bottom: 16px;
             margin-bottom: 32px;
             text-align: center;
@@ -92,6 +105,10 @@ section.section-o-ebook {
 
             .item-content {
                 transform: none !important;
+
+                h3 {
+                    font-size: 2rem;
+                }
             }
         }
 

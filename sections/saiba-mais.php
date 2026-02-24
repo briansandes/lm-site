@@ -11,22 +11,36 @@
                 </div>
                 <div class="section-text-holder">
                     <p class="section-text">
-                        Quando você não enxerga o caminho, você toma decisão no impulso.
-                        E impulso é caro: <strong>compra errada</strong>, <strong>parcela longa</strong>,
-                        <strong>juros</strong> “pequenos” que viram <strong>bola de neve</strong>.
+                        <strong>Quando falta clareza, sobra erro: decisão no impulso,
+                        parcela eterna, juros “inofensivos” que te mantêm sempre no mesmo lugar.</strong>
+                    </p>
+                    <p class="section-text">
+                        Você trabalha, recebe, paga...<br />
+                        e no fim do mês não sabe onde o dinheiro morreu.
+                    </p>
                     </p>
                     <ul class="section-text">
-                        <li>Você fecha o mês sem saber pra onde foi o dinheiro</li>
-    
-                        <li>Você paga conta atrasada e chama isso de “normal”</li>
-    
-                        <li>Você parcela porque “cabe”, e descobre tarde que não cabia</li>
-    
-                        <li>Você tem medo de investir porque parece complexo</li>
+                        <li>Conta atrasada vira rotina</li>
+                        <li>Parcela vira desespero</li>
+                        <li>Juros viram bola de neve</li>
+                        <li>Investir vira sacrifício</li>
                     </ul>
                     <p class="section-text">
-                        O box existe pra acabar com isso — <strong>começando pelo básico que ninguém te ensinou na
-                            escola</strong>.
+                        <strong>
+                            A solução começa quando você entende o básico —
+                            como organizar, suas decisões:
+                        </strong>
+                    </p>
+                    <ul class="section-text">
+                        <li>Clareza total sobre onde seu dinheiro vai</li>
+                        <li>Decisões financeiras sem impulso ou culpa</li>
+                        <li>Controle antes de investir com segurança</li>
+                        <li>Dinheiro trabalhando por você, não contra você</li>
+                    </ul>
+                    <p class="section-text" style="text-align: center;">
+                        <strong>
+                            👇 E isso muda tudo... 👇
+                        </strong>
                     </p>
                 </div>
             </div>
@@ -35,8 +49,8 @@
             <!-- col image -->
             <div class="col-lg-6 col-image hide-mobile">
                 <div class="section-saiba-mais__image-holder">
-                    <img src="assets/img/ilustracao-saiba-mais.webp" class="img-fluid section-saiba-mais__image" alt="Checklist Finanças Descomplicadas"
-                        title="Checklist Finanças Descomplicadas" />
+                    <img src="assets/img/ilustracao-saiba-mais.webp" class="img-fluid section-saiba-mais__image"
+                        alt="Checklist Finanças Descomplicadas" title="Checklist Finanças Descomplicadas" />
                 </div>
             </div>
             <!-- col image -->
