@@ -1,7 +1,7 @@
 <!-- o ebook -->
 <section class="section-o-ebook" id="o-ebook">
     <div class="section-o-ebook__gorivaldo-professor-holder">
-        <img src="assets/img/professor.webp" class="section-o-ebook__gorivaldo-professor tilt" loading="lazy" />
+        <img src="assets/img/professor.webp" class="section-o-ebook__gorivaldo-professor" loading="lazy" />
     </div>
     <div class="container">
 
