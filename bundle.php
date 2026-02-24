@@ -19,10 +19,6 @@
   <link rel="canonical" href="https://ebook.logicamacaquista.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style type="text/css">
-      <?php include 'assets/css/bootstrap-custom.css'; ?>
-    </style>
-
     <!-- <link href="assets/css/bootstrap-custom.css" rel="stylesheet" /> -->
 
   <!-- Google Font -->
@@ -35,7 +31,8 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <style type="text/css">
       <?php include 'assets/css/in-page.css'; ?>
-    </style>
+
+  </style>
 
   <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
