@@ -1,0 +1,113 @@
+:root {
+    --primary-bg-color: #399595;
+    /* global scope */
+}
+
+/* ----------------- */
+/* base css */
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Staatliches", sans-serif;
+
+    &.section-title {
+        font-weight: 500;
+    }
+}
+
+.section-text {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(16px);
+    }
+
+    50% {
+        transform: translatey(-16px);
+    }
+
+    100% {
+        transform: translatey(16px);
+    }
+}
+
+.tilt {
+    display: inline-block;
+    animation: tiltAnim 1s steps(1) infinite;
+}
+
+@keyframes tiltAnim {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.cta {
+    border: none;
+    border-radius: 0;
+    font-size: 1.4rem;
+    box-shadow: -4px 4px 0px black;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    color: black;
+
+    &.cta-primary {
+        background-color: #ffa500;
+    }
+
+    &.cta-white {
+        background-color: white;
+        border: none;
+    }
+
+    .cta-icon {
+        width: 24px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+}
+
+
+@include respond(mobile) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+@include aboveMobile() {
+    .mobile-only {
+        display: none !important;
+    }
+}

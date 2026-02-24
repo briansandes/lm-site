@@ -13,7 +13,15 @@ $breakpoints: (
     @media screen and (max-width: map-get($breakpoints, $device)) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @error "Unknown breakpoint: `#{$device}`. Check _mixins.scss.";
+  }
+}
+
+@mixin aboveMobile() {
+  @media screen and (min-width > map-get($breakpoints, 'mobile')) {
+    @content;
   }
 }

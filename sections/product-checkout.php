@@ -217,7 +217,7 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                                         <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_lancamento&utm_content=checkout_cta2"
                                             class="btn cta cta-primary cta-checkout-1" role="button">
                                             <img src="<?php echo $cart; ?>" alt="Comprar o box completo"
-                                                title="Comprar o box completo" class="product-cta-icon" /> Comprar o box
+                                                title="Comprar o box completo" class="cta-left-icon cta-icon" /> Comprar o box
                                             completo
                                         </a>
                                     </div>
@@ -411,7 +411,7 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                                         <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_lancamento&utm_content=cta_last_call"
                                             target="_blank" role="button"
                                             class="btn cta cta-primary checkout-last-call__cta">
-                                            <img src="<?php echo $cart; ?>" alt="Quero o box completo" title="Quero o box completo" class="product-cta-icon" /> Quero o box
+                                            <img src="<?php echo $cart; ?>" alt="Quero o box completo" title="Quero o box completo" class="cta-left-icon cta-icon" /> Quero o box
                                             completo
                                         </a>
                                     </div>
