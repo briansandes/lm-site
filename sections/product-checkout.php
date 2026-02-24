@@ -388,9 +388,9 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                         </div>
 
                         <div class="row">
-                            <div class="col-4 col-sm-5 last-cta-col-img">
+                            <div class="col-4 col-sm-5 last-call-col-img">
                                 <img src="assets/img/checkout-stonks.png" alt="Stonks" title="Stonks"
-                                class="img-fluid last-cta-img" loading="lazy" />
+                                class="img-fluid last-call-img" loading="lazy" />
                             </div>
 
                             <div class="col-8 col-sm-7 last-cta-col-text">

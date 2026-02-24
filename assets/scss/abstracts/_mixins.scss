@@ -21,7 +21,7 @@ $breakpoints: (
 }
 
 @mixin aboveMobile() {
-  @media screen and (min-width > map-get($breakpoints, 'mobile')) {
+  @media screen and (min-width: map-get($breakpoints, 'mobile')) {
     @content;
   }
 }
