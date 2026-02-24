@@ -16,4 +16,14 @@ section.section-saiba-mais {
     .col-image {
         display: none;
     }
+
+    @include respond(mobile) {
+        background: white;
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+        }
+    }
 }
