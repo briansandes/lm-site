@@ -30,4 +30,20 @@
             text-shadow: var(--shadow-1);
         }
     }
+
+    @include respond(mobile) {
+        padding-top: 12px;
+
+        .main-loader__logo-holder {
+            h2.main-loader__logo {
+                font-size: 2rem;
+                line-height: 1.5rem;
+            }
+
+            .main-loader__logo-sub {
+                font-size: 1.5rem;
+                line-height: 1rem;
+            }
+        }
+    }
 }

@@ -24,9 +24,6 @@
                                             Sem economês. Sem teorias infinitas.<br />
                                             Você lê e aplica: cada capítulo termina com uma missão prática.
                                         </p>
-                                        <p>
-                                            Gastos • Dívidas • Reserva • Investimentos • Mentalidade
-                                        </p>
                                     </div>
                                 </div>
                                 <div class="cta-holder">
