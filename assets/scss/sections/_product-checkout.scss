@@ -333,4 +333,111 @@
             order: 2 !important;
         }
     }
-}
+
+    @include respond(mobile) {
+        .section-title {
+            font-size: 2.5rem;
+            border-bottom: none;
+            margin-bottom: 32px;
+            font-weight: 300;
+            line-height: 3rem;
+        }
+
+        .card {
+            margin-bottom: 80px;
+        }
+
+        .col-product-image {
+            .product-image-holder {
+                .section-product-checkout__product-image-slider {
+                    .product-image {
+                        max-height: 280px;
+                    }
+
+                    .slick-arrow {
+                        &.slick-prev {
+                            left: -10px;
+                        }
+
+                        &.slick-next {
+                            right: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-product-info {
+            .product-offer {
+                width: calc(100% + 32px);
+                margin-left: -16px;
+                margin-right: -16px;
+                display: block;
+                position: relative;
+                font-size: 1.25rem;
+            }
+
+            .cta {
+                font-size: 1.2rem;
+            }
+        }
+
+        .product-reviews-holder {
+            padding-left: 0;
+        }
+
+        .product-last-call__sub {
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .speech-bubble {
+            margin-bottom: 40px !important;
+            padding: 20px 16px;
+            font-size: 1.1rem;
+
+            &::after {
+                left: 40%;
+            }
+        }
+
+        .last-call-col-img {
+            position: relative;
+        }
+
+        .last-call-img {
+            margin-left: 0;
+            position: absolute;
+            left: -4px;
+            bottom: 0;
+        }
+
+        .product-last-call__cta-holder {
+            padding-bottom: 20px;
+
+            .checkout-last-call__cta {
+                font-size: 0.9rem;
+                padding: 8px 2px;
+                width: 100%;
+
+                .cta-icon {
+                    width: 24px;
+                }
+            }
+        }
+
+        .section-product-checkout__bg-desktop {
+            display: none;
+        }
+
+        .section-product-checkout__bg-mobile {
+            display: block;
+            width: 100%;
+            height: 220px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            background-image: url('../img/macacolandia-noite.png');
+            }
+        }
+    }

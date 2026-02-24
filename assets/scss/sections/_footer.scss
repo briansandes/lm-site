@@ -41,4 +41,37 @@ footer.footer {
             display: inline-block;
         }
     }
+
+    @include respond(mobile) {
+        padding-top: 0;
+        background-size: auto;
+
+        .footer-mobile-container {
+            position: relative;
+            top: -50px;
+        }
+
+        .placa {
+            width: 300px;
+            height: 190px;
+            margin-bottom: 32px;
+            padding: 16px 36px;
+
+            a,
+            h6,
+            p {
+                font-size: 2rem;
+            }
+
+            &.placa-1 {
+                transform: scale(0.7) translateX(-40px);
+            }
+
+            &.placa-2 {
+                transform: scale(0.85) translateX(30px) translateY(-15px);
+            }
+
+            &.placa-3 {}
+        }
+    }
 }

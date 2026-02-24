@@ -70,4 +70,35 @@ section.section-o-ebook {
             transform: rotate(25deg);
         }
     }
+
+    @include respond(mobile) {
+        padding-top: 48px;
+        padding-bottom: 32px;
+
+        .section-title {
+            font-size: 1.6rem;
+            padding-bottom: 16px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .section-o-ebook__gorivaldo-professor-holder {
+            display: none;
+        }
+
+        .benefits-list li {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+
+            .item-content {
+                transform: none !important;
+            }
+        }
+
+        .section-o-ebook__floating-banana-holder {
+            bottom: -50px;
+            right: 30px;
+            width: 120px;
+        }
+    }
 }
