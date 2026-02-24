@@ -1,0 +1,18 @@
+section.section-hero {
+    color: white;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-size: 30px 60px;
+    background-image: repeating-linear-gradient(45deg, #52a8a8 0, #399595 1px, #399595 0, #399595 50%);
+
+    .section-hero__bg-bottom {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .section-hero__bg-bottom-mobile {
+        display: none;
+    }
+}

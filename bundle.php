@@ -37,7 +37,7 @@
   <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="loaded">
   <main>
     <?php include 'sections/main-loader.php'; ?>
     <?php include 'sections/hero.php'; ?>

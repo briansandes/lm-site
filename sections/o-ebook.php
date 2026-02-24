@@ -99,7 +99,7 @@
     </div>
     <div class="section-o-ebook__floating-banana-holder">
         <img src="assets/img/banana.webp" alt="Eu sou uma banana!" title="Eu sou uma banana!"
-        class="section-o-ebook__floating-banana" loading="lazy" /> />
+        class="section-o-ebook__floating-banana" loading="lazy" />
     </div>
 </section>
 <!-- o ebook -->
