@@ -1,50 +1,61 @@
-const { src, dest, watch, series } = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const cleanCSS = require('gulp-clean-css');
-const plumber = require('gulp-plumber');
-const shell = require('gulp-shell');
-const rename = require('gulp-rename');
+const { src, dest, watch, series } = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const cleanCSS = require("gulp-clean-css");
+const plumber = require("gulp-plumber");
+const shell = require("gulp-shell");
 
-// Compile PHP to HTML
-function buildHtml() {
-  return src('bundle.php')
-    .pipe(shell([
-      'php bundle.php > index.html'
-    ]));
-}
-
+// --------------------
+// Paths
+// --------------------
 const paths = {
-  scss: 'assets/scss/**/*.scss',
+  scss: "assets/scss/**/*.scss",
   entries: [
-    'assets/scss/styles.scss',
-    'assets/scss/in-page.scss'
+    "assets/scss/styles.scss",
+    "assets/scss/in-page.scss"
   ],
-  cssDest: 'assets/css'
+  cssDest: "assets/css",
+  php: ["bundle.php", "sections/**/*.php"]
 };
 
+// --------------------
+// Styles task
+// --------------------
 function styles() {
   return src(paths.entries, { allowEmpty: true })
     .pipe(plumber())
     .pipe(
       sass({
-        outputStyle: 'expanded'
-      }).on('error', sass.logError)
+        outputStyle: "expanded"
+      }).on("error", sass.logError)
     )
     .pipe(cleanCSS())
     .pipe(dest(paths.cssDest));
 }
 
-function watchFiles() {
-  watch(paths.scss, styles);
-  watch(
-    ['bundle.php', 'sections/**/*.php', paths.scss],
-    buildHtml
-  );
+// --------------------
+// Build HTML from PHP
+// --------------------
+function buildHtml() {
+  return shell.task("php bundle.php > index.html")();
 }
 
-exports.styles = styles;
-exports.dev = series(styles, buildHtml, watchFiles);
-exports.default = exports.dev;
+// --------------------
+// Composed tasks
+// --------------------
+const build = series(styles, buildHtml);
 
-// once in a while, run:
-// npx sass --load-path=node_modules assets/scss/bootstrap-custom.scss assets/css/bootstrap-custom.css --style=compressed --no-source-map
+// --------------------
+// Watchers
+// --------------------
+function watchFiles() {
+  watch(paths.scss, build);          // SCSS → styles → buildHtml
+  watch(paths.php, buildHtml);       // PHP only → buildHtml
+}
+
+// --------------------
+// Exports
+// --------------------
+exports.styles = styles;
+exports.build = build;
+exports.dev = series(build, watchFiles);
+exports.default = exports.dev;

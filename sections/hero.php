@@ -21,7 +21,7 @@
                                         </p>
                                         <p class="lesser-text">
                                             Enxergue agora para onde seu dinheiro vai, pare de ser engolido por juros
-                                            e parcelas aprenda a construir controle, reserva e investimentos.
+                                            e parcelas e aprenda a construir controle, reserva e investimentos.
                                         </p>
                                     </div>
                                 </div>

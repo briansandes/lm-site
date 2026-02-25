@@ -408,9 +408,8 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                                             Resolva por etapas, do jeito simples.
                                         </p>
                                         <p class="product-last-call__sub">
-                                            Acesso imediato <span class="hide-mobile">•</span><br class="mobile-only" />
-                                            7
-                                            dias de garantia
+                                            🛡️ Acesso imediato <span class="hide-mobile">•</span><br class="mobile-only" />
+                                            💰 7 dias de garantia
                                         </p>
                                     </div>
                                     <div class="product-last-call__cta-holder">
