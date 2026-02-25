@@ -56,6 +56,15 @@ section.section-hero {
 
     /* mobile */
     @include respond(mobile) {
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            /* opacity here */
+            z-index: 2;
+        }
+
         .v-centered-container {
             display: block;
             padding-top: 88px;
@@ -71,8 +80,13 @@ section.section-hero {
         }
 
         .section-text {
-            font-size: 1rem;
-            line-height: 1.2rem;
+            font-size: 1.4rem;
+            font-family: 'Staatliches';
+            line-height: normal;
+
+            .lesser-text, &.lesser-text {
+                font-size: 1.1rem;
+            }
         }
 
         .section-hero__image {
@@ -84,22 +98,46 @@ section.section-hero {
         }
 
         .cta-holder {
-            margin-bottom: 32px;
+            margin-bottom: 0;
         }
 
         .cta {
             font-size: 1rem;
-            padding-inline: 5px;
+            padding-inline: 4px;
+
+            &.cta-learn-more {
+                display: none;
+            }
+
+            &.cta-purchase {
+                margin-left: 0 !important;
+                width: 100%;
+            }
         }
 
         .col-text {
             order: 2 !important;
             position: relative;
+
+            .content-holder {
+                position: absolute;
+                z-index: 10;
+                width: 100%;
+                left: 0;
+                padding: 0 15px;
+
+                .v-content {
+                    background: rgba(0, 0, 0, 0.5);
+                    padding: 12px;
+                    padding-bottom: 24px;
+                }
+            }
         }
 
         .col-image {
             order: 1 !important;
             position: relative;
+            margin-bottom: 24px;
 
             .image-holder {
                 position: relative;
@@ -121,6 +159,7 @@ section.section-hero {
             background-repeat: no-repeat;
             background-position: top center;
             background-size: cover;
+            z-index: 1;
         }
     }
 }

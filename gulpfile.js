@@ -2,6 +2,16 @@ const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const plumber = require('gulp-plumber');
+const shell = require('gulp-shell');
+const rename = require('gulp-rename');
+
+// Compile PHP to HTML
+function buildHtml() {
+  return src('bundle.php')
+    .pipe(shell([
+      'php bundle.php > index.html'
+    ]));
+}
 
 const paths = {
   scss: 'assets/scss/**/*.scss',
@@ -26,10 +36,14 @@ function styles() {
 
 function watchFiles() {
   watch(paths.scss, styles);
+  watch(
+    ['bundle.php', 'sections/**/*.php', paths.scss],
+    buildHtml
+  );
 }
 
 exports.styles = styles;
-exports.dev = series(styles, watchFiles);
+exports.dev = series(styles, buildHtml, watchFiles);
 exports.default = exports.dev;
 
 // once in a while, run:
