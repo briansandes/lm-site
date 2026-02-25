@@ -24,18 +24,18 @@
                             <h3>📘 Controle Total dos Seus Gastos</h3>
                             <ul>
                                 <li>
-                                    Como listar tudo que deve (sem fugir da realidade)
+                                    Fazer o raio-x real da sua vida financeira
                                 </li>
                                 <li>
-                                    Como negociar desconto de verdade
-                                </li>
-
-                                <li>
-                                    Qual estratégia usar para quitar mais rápido
+                                    Identificar os vazamentos invisíveis
                                 </li>
 
                                 <li>
-                                    Como não cair de novo no mesmo ciclo
+                                    Separar necessidade de capricho
+                                </li>
+
+                                <li>
+                                    Criar metas que você realmente consegue cumprir
                                 </li>
                             </ul>
                         </div>

@@ -48,9 +48,10 @@ section.section-hero {
     }
 
     .section-text {
+        font-family: 'Staatliches', sans-serif;
         text-shadow: var(--shadow-1);
-        font-size: 1.4rem;
-        line-height: 1.8rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
         font-weight: 500;
     }
 
@@ -84,13 +85,15 @@ section.section-hero {
             font-family: 'Staatliches';
             line-height: normal;
 
-                text-align: center;
+            text-align: center;
 
-            .meta-title, &.meta-title {
+            .meta-title,
+            &.meta-title {
                 text-align: center;
             }
 
-            .lesser-text, &.lesser-text {
+            .lesser-text,
+            &.lesser-text {
                 font-size: 1.1rem;
             }
         }
