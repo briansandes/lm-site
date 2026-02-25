@@ -16,13 +16,13 @@
                                 <div class="section-text-holder">
                                     <div class="section-text">
                                         <p>
-                                            O box com 5 eBooks práticos para colocar
-                                            seu dinheiro no controle, do gasto ao investimento.
+                                            Você trabalha, se esforça, mas no fim do mês o dinheiro
+                                            some e sobra só a sensação de estar sempre atrasado na própria vida.
                                         </p>
-
                                         <p>
                                             Sem economês. Sem teorias infinitas.<br />
-                                            Você lê e aplica: cada capítulo termina com uma missão prática.
+                                            enxergar para onde seu dinheiro vai, parar de ser engolido por juros
+                                            e parcelas e finalmente construir controle, reserva e investimentos.
                                         </p>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                     <!-- image -->
                     <div class="col-md-6 col-image">
                         <div class="image-holder">
-                            <img src="assets/img/box-ebook-hero.webp" id="section-hero__image"
+                            <img src="assets/img/box-cover.png" id="section-hero__image"
                                 class="img-fluid section-hero__image" alt="Finanças Descomplicadas | Lógica Macaquista"
                                 title="Finanças Descomplicadas | Lógica Macaquista" loading="eager"
                                 fetchpriority="high" />

@@ -58,7 +58,11 @@ section.section-hero {
     @include respond(mobile) {
         .v-centered-container {
             display: block;
-            padding-top: 100px;
+            padding-top: 88px;
+        }
+
+        .section-title-holder {
+            display: none;
         }
 
         h1.section-title {
@@ -88,11 +92,17 @@ section.section-hero {
             padding-inline: 5px;
         }
 
+        .col-text {
+            order: 2 !important;
+            position: relative;
+        }
+
         .col-image {
+            order: 1 !important;
             position: relative;
 
             .image-holder {
-                position: absolute;
+                position: relative;
                 width: 100%;
                 left: 0;
                 top: 0;
