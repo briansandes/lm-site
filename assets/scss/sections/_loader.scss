@@ -36,8 +36,12 @@
 
         .main-loader__logo-holder {
             h2.main-loader__logo {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 line-height: 1.5rem;
+
+                .main-loader__star {
+                    width: 20px;
+                }
             }
 
             .main-loader__logo-sub {

@@ -64,11 +64,12 @@ section.section-hero {
             background-color: rgba(0, 0, 0, 0.2);
             /* opacity here */
             z-index: 2;
+            height: 100vh;
         }
 
         .v-centered-container {
             display: block;
-            padding-top: 88px;
+            padding-top: 72px;
         }
 
         .section-title-holder {
@@ -94,12 +95,12 @@ section.section-hero {
 
             .lesser-text,
             &.lesser-text {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
         }
 
         .section-hero__image {
-            width: 280px;
+            width: 300px;
         }
 
         .section-hero__bg-bottom {
@@ -133,7 +134,7 @@ section.section-hero {
                 z-index: 10;
                 width: 100%;
                 left: 0;
-                padding: 0 15px;
+                padding: 0;
 
                 .v-content {
                     background: rgba(0, 0, 0, 0.6);

@@ -16,12 +16,15 @@
                                 <div class="section-text-holder">
                                     <div class="section-text">
                                         <p class="meta-title">
-                                            Se no fim do mês o dinheiro
-                                            some e sobra só a sensação de estar sempre atrasado na própria vida.
+                                            Se no fim do mês o salário
+                                            some<br class="mobile-only" />
+                                            e sobra só a sensação de estar<br class="mobile-only" />
+                                            sempre atrasado na própria vida
                                         </p>
                                         <p class="lesser-text">
-                                            Enxergue agora para onde seu dinheiro vai, pare de ser engolido por juros
-                                            e parcelas e aprenda a construir controle, reserva e investimentos.
+                                            Enxergue agora para onde seu dinheiro vai,<br class="mobile-only" />
+                                            pare de ser engolido por juros e parcelas <span class="hide-mobile">e</span><br class="mobile-only" />
+                                            aprenda a construir controle,<br class="mobile-only" /> estratégia, reserva e investimentos
                                         </p>
                                     </div>
                                 </div>

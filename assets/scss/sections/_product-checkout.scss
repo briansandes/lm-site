@@ -374,6 +374,13 @@
                 display: block;
                 position: relative;
                 font-size: 1.25rem;
+                text-align: center;
+                line-height: 1.25rem;
+                padding-top: 12px;
+
+                .blink {
+                    animation: blink 1s infinite;
+                }
             }
 
             .product-short-description {

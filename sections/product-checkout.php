@@ -150,7 +150,9 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                             <div class="product-info-holder">
                                 <div class="product-offer-holder">
                                     <div class="product-offer">
-                                        OFERTA MARÇO SEM DÍVIDAS 30% OFF
+                                        <span class="blink">
+                                            OFERTA MARÇO SEM DÍVIDAS 30% OFF
+                                        </span>
                                     </div>
                                     <div class="product-offer-muted">válido até 08/03/2026</div>
                                 </div>

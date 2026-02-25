@@ -58,6 +58,15 @@ h6 {
     }
 }
 
+@keyframes blink {
+  0%, 54% {
+    opacity: 1;
+  }
+  55%, 100% {
+    opacity: 0;
+  }
+}
+
 .tilt {
     display: inline-block;
     animation: tiltAnim 1s steps(1) infinite;
