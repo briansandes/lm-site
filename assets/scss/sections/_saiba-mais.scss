@@ -1,0 +1,47 @@
+section.section-saiba-mais {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+    background-image: url('../img/ilustracao-saiba-mais.webp');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 800px;
+
+    .section-title {
+        font-size: 3rem;
+        border-bottom: solid 2px #cccccc;
+        margin-bottom: 32px;
+    }
+
+    .col-image {
+        display: none;
+    }
+
+    @include respond(desktop) {
+        background-size: 600px;
+    }
+
+    @include respond(laptop) {
+        background-size: 500px;
+    }
+
+    @include respond(tablet) {
+        background-size: 400px;
+    }
+
+    @include respond(mobile-large) {
+        background: white ;
+    }
+
+    @include respond(mobile) {
+        background: white;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+        }
+    }
+}
