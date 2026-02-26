@@ -32,7 +32,7 @@
                                     <a href="#saiba-mais" class="btn btn-light cta cta-white cta-learn-more">
                                         Ver o conteúdo
                                     </a>
-                                    <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_lancamento&utm_content=hero_cta"
+                                    <a href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-financas-descomplicadas-vtwvq/X103318171D?utm_source=landing_page&utm_medium=cta&utm_campaign=ebook_lancamento&utm_content=cta_hero"
                                         class="btn btn-info cta cta-primary cta-purchase" target="_blank">
                                         Adquira o box Finanças Descomplicadas
                                     </a>
