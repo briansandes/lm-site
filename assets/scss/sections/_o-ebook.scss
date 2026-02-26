@@ -32,7 +32,8 @@ section.section-o-ebook {
         max-width: 800px;
 
         li.benefit-item-list {
-            margin-bottom: 32px;;
+            margin-bottom: 32px;
+            ;
 
             .item-content {
                 background: white;
@@ -49,6 +50,7 @@ section.section-o-ebook {
                     list-style: disc;
                     font-weight: 400;
                     font-size: 1.2rem;
+
                     li {
                         margin-bottom: 8px;
                     }
@@ -82,6 +84,18 @@ section.section-o-ebook {
         .section-o-ebook__floating-banana {
             max-width: 100%;
             transform: rotate(25deg);
+        }
+    }
+
+    @include respond(laptop) {
+        .section-o-ebook__gorivaldo-professor {
+            max-width: 240px;
+        }
+    }
+
+    @include respond(mobile-large) {
+        .section-o-ebook__gorivaldo-professor {
+            display: none;
         }
     }
 

@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <!-- text -->
-                    <div class="col-md-6 col-text">
+                    <div class="col-sm-6 col-text">
                         <div class="content-holder">
                             <div class="v-content">
                                 <div class="section-title-holder">
@@ -43,7 +43,7 @@
                     <!-- text -->
 
                     <!-- image -->
-                    <div class="col-md-6 col-image">
+                    <div class="col-sm-6 col-image">
                         <div class="image-holder">
                             <img src="assets/img/hero-box-cover.png" id="section-hero__image"
                                 class="img-fluid section-hero__image" alt="Finanças Descomplicadas | Lógica Macaquista"

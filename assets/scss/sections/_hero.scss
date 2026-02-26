@@ -131,7 +131,41 @@ section.section-hero {
 
         .v-centered-container .col-text {
             .cta {
-                font-size: 1.1rem;
+                font-size: 1rem;
+                padding-left: 4px;
+                padding-right: 4px;
+    
+                &.cta-learn-more {
+                    display: none;
+                }
+    
+                &.cta-purchase {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    /* mobile landscape */
+    @include respond(tablet) {
+        h1.section-title {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+
+        .section-text {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+
+        .v-centered-container .col-image .section-hero__image.section-hero__image {
+            width: 200px;
+        }
+
+        .v-centered-container .col-text {
+            .cta {
+                font-size: 1rem;
                 padding-left: 4px;
                 padding-right: 4px;
     

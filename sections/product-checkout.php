@@ -17,7 +17,7 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                     <!-- product first row -->
                     <div class="row">
                         <!-- product image -->
-                        <div class="col-sm-6 col-product-image">
+                        <div class="col-md-6 col-product-image">
                             <div class="product-image-holder">
                                 <div class="section-product-checkout__product-image-slider">
                                     <!-- item -->
@@ -146,7 +146,7 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                         <!-- product image -->
 
                         <!-- product info cta -->
-                        <div class="col-sm-6 col-product-info">
+                        <div class="col-md-6 col-product-info">
                             <div class="product-info-holder">
                                 <div class="product-offer-holder">
                                     <div class="product-offer">
@@ -241,7 +241,7 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                     <!-- product second row -->
                     <div class="row">
                         <!-- reviews col -->
-                        <div class="col-sm-6 col-product-reviews order-2 order-sm-1">
+                        <div class="col-md-6 col-product-reviews order-2 order-sm-1">
                             <div class="product-reviews-holder">
                                 <section class="product-review-section" aria-label="Depoimentos dos leitores">
                                     <h3 class="product-reviews-title">O que dizem os leitores</h3>
@@ -345,7 +345,7 @@ $cart = 'data:image/webp;base64,UklGRgYDAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEC
                         <!-- reviews col -->
 
                         <!-- product description col -->
-                        <div class="col-sm-6 col-product-description order-1 order-sm-2">
+                        <div class="col-md-6 col-product-description order-1 order-sm-2">
                             <div class="product-description-holder">
                                 <h3 class="product-description-title">O que você recebe hoje:
                                 </h3>

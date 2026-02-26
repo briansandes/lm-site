@@ -17,6 +17,22 @@ section.section-saiba-mais {
         display: none;
     }
 
+    @include respond(desktop) {
+        background-size: 600px;
+    }
+
+    @include respond(laptop) {
+        background-size: 500px;
+    }
+
+    @include respond(tablet) {
+        background-size: 400px;
+    }
+
+    @include respond(mobile-large) {
+        background: white ;
+    }
+
     @include respond(mobile) {
         background: white;
         padding-top: 32px;

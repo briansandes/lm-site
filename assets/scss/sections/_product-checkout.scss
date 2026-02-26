@@ -327,7 +327,11 @@
         text-align: center;
     }
 
-    @media (min-width: 576px) {
+    .section-product-checkout__bg-desktop {
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
         .col-product-reviews {
             order: 1 !important;
         }
@@ -337,7 +341,20 @@
         }
     }
 
-    @include respond(mobile) {
+    /*@include respond(mobile-large) {
+        .product-reviews-holder {
+            padding-left: 0;
+        }
+    }*/
+
+    @include respond(medium) {
+        p.product-last-call__sub {
+            margin-bottom: 1rem;
+        }
+    }
+
+    // @include respond(mobile) {
+    @media screen and (max-width: 767.98px) {
         .section-title {
             font-size: 2.5rem;
             border-bottom: none;
