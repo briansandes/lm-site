@@ -55,6 +55,98 @@ section.section-hero {
         font-weight: 500;
     }
 
+    @include respond(desktop) {
+        h1.section-title {
+            font-size: 4.8rem;
+            line-height: 5.2rem;
+        }
+
+        .section-text {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+        }
+
+        .v-centered-container .col-image .section-hero__image.section-hero__image {
+            width: 450px;
+        }
+    }
+
+    @include respond(laptop) {
+        h1.section-title {
+            font-size: 4.2rem;
+            line-height: 4.8rem;
+        }
+
+        .section-text {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+
+        .v-centered-container .col-image .section-hero__image.section-hero__image {
+            width: 420px;
+        }
+
+        .cta {
+            font-size: 1.1rem;
+        }
+    }
+
+
+    @include respond(medium) {
+        h1.section-title {
+            font-size: 3.8rem;
+            line-height: 4.2rem;
+        }
+
+        .section-text {
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+
+        .v-centered-container .col-image .section-hero__image.section-hero__image {
+            width: 400px;
+        }
+
+        .cta {
+            font-size: 1rem;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+    }
+
+    @include respond(tablet) {
+        h1.section-title {
+            font-size: 3.2rem;
+            line-height: 3.8rem;
+        }
+
+        .section-text {
+            font-size: 1.1rem;
+            line-height: 1.4rem;
+        }
+
+        .v-centered-container .col-image .section-hero__image.section-hero__image {
+            width: 300px;
+        }
+
+        .v-centered-container .col-text {
+            .cta {
+                font-size: 1.1rem;
+                padding-left: 4px;
+                padding-right: 4px;
+    
+                &.cta-learn-more {
+                    display: none;
+                }
+    
+                &.cta-purchase {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
     /* mobile */
     @include respond(mobile) {
         &::before {
