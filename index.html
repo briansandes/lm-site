@@ -33,6 +33,14 @@ src="https://www.facebook.com/tr?id=952790900523160&ev=PageView&noscript=1"
   <meta name="description"
     content="Box com 5 eBooks para controlar gastos, eliminar dívidas e começar a investir com confiança. Sem economês, com exercícios e ferramentas práticas.">
   <meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Finanças Descomplicadas - Box com 5 eBooks Completos | Lógica Macaquista" />
+  <meta property="og:description" content="Box com 5 eBooks para controlar gastos, eliminar dívidas e começar a investir com confiança. Sem economês, com exercícios e ferramentas práticas." />
+  <meta property="og:image" content="https://ebook.logicamacaquista.com/assets/img/financas-descomplicadas-preview.png" />
+  <meta property="og:url" content="https://ebook.logicamacaquista.com" />
+  <meta property="og:type" content="website" />
+
+
   <link rel="canonical" href="https://ebook.logicamacaquista.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
