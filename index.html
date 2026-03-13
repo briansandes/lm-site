@@ -3,14 +3,14 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-  <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYR0J8GF2G"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYR0J8GF2G"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-QYR0J8GF2G');
-  </script>-->
+  </script>
   <meta charset="UTF-8">
   <title>Finanças Descomplicadas - Box com 5 eBooks Completos | Lógica Macaquista</title>
   <meta name="description"
@@ -422,7 +422,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h5 class="section-title">Perguntas frequentes</h5>
+            <h5 class="section-title">Perguntas Frequentes</h5>
           </div>
         </div>
         <div class="row">
