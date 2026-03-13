@@ -366,3 +366,78 @@ body {
         }
     }
 }
+
+.section-reviews {
+    padding: $padding-v-2 0;
+
+    .section-title {
+        font-size: 3rem;
+        margin-bottom: $padding-v-2;
+        text-align: center;
+        color: $hero-bg;
+    }
+
+    .product-reviews {
+        .review-holder {
+            background: $hero-bg;
+            padding: $padding-1;
+            border-radius: 16px;
+        }
+
+        .product-review {
+            color: white;
+            max-width: 480px;
+            min-height: 180px;
+
+            .review-header {
+                vertical-align: top;
+                margin-bottom: $padding-v-5;
+
+                .review-image-holder {
+                    width: 48px;
+                    display: inline-block;
+
+                    .review-image {
+                        border-radius: 100%;
+                        display: block;
+                        max-width: 100%;
+                    }
+                }
+
+                .review-user-holder {
+                    margin-left: 16px;
+                    display: inline-block;
+
+                    address {
+                        margin-bottom: 0;
+                    }
+
+                    .review-user-name {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        font-style: italic;
+                    }
+                }
+
+                .review-rating-holder {
+                    .review-rating-value {
+                        display: none;
+                    }
+
+                    .review-rating-stars {
+                        color: orange;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            .review-text-holder {
+                .review-text {
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    padding-bottom: $padding-v-6;
+                }
+            }
+        }
+    }
+}
