@@ -10,11 +10,10 @@ const shell = require("gulp-shell");
 const paths = {
   scss: "assets/scss/**/*.scss",
   entries: [
-    "assets/scss/styles.scss",
-    "assets/scss/in-page.scss"
+    "assets/scss/styles.scss"
   ],
   cssDest: "assets/css",
-  php: ["bundle.php", "sections/**/*.php"]
+  php: ["bundle.php"]
 };
 
 // --------------------
@@ -28,7 +27,13 @@ function styles() {
         outputStyle: "expanded"
       }).on("error", sass.logError)
     )
-    .pipe(cleanCSS())
+    .pipe(cleanCSS({
+      level: {
+        1: {
+          specialComments: 0
+        }
+      }
+    }))
     .pipe(dest(paths.cssDest));
 }
 
