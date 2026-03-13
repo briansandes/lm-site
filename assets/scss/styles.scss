@@ -1,6 +1,697 @@
-@import 'abstracts/variables';
 @import 'abstracts/mixins';
-@import 'sections/saiba-mais';
-@import 'sections/o-ebook';
-@import 'sections/product-checkout';
-@import 'sections/footer';
+@import 'bootstrap-reboot.min.css';
+
+$padding-v-0: 80px;
+$padding-v-1: 64px;
+$padding-v-2: 48px;
+$padding-v-3: 32px;
+$padding-v-4: 24px;
+$padding-v-5: 16px;
+$padding-v-6: 12px;
+$padding-v-7: 8px;
+
+$padding-h-1: 80px;
+$padding-h-2: 64px;
+
+$padding-1: 16px;
+$padding-2: 12px;
+$padding-3: 8px;
+$padding-4: 4px;
+
+
+$hero-bg: #01072b;
+
+.container {
+    max-width: 1700px;
+    width: 100%;
+    padding-inline: $padding-1;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .col,
+    .col-7,
+    .col-6,
+    .col-5,
+    .col-4 {
+        padding-inline: $padding-1;
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .col-7 {
+        width: calc(100% / 12 * 7);
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-5 {
+        width: calc(100% / 12 * 5);
+    }
+
+    .col-4 {
+        width: calc(100% / 3);
+    }
+
+
+
+    @include respond(mobile) {
+
+        .col-6,
+        .col-4 {
+            width: 100%;
+        }
+    }
+}
+
+
+@keyframes initAnimation {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(-30deg);
+    }
+}
+
+body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f0f0;
+}
+
+.section-title {
+    font-weight: 700;
+    font-family: "League Spartan", sans-serif;
+}
+
+.section-text {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    font-weight: 300;
+    margin-bottom: $padding-v-5;
+
+    strong {
+        font-weight: 600;
+    }
+}
+
+.cta-holder {
+    display: inline-block;
+}
+
+.cta {
+    min-width: 300px;
+    padding: 16px 24px;
+    background-color: lightseagreen;
+    color: $hero-bg;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    white-space: nowrap;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+
+    &:hover {
+        color: $hero-bg;
+    }
+}
+
+.microcopy {
+    padding-top: 4px;
+    color: white;
+    font-size: 0.8rem;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@include respond(mobile) {
+    .mobile-only {
+        display: inline-block;
+    }
+}
+
+/* sections ------------------------------- */
+
+.section-hero {
+    color: white;
+
+    .container {
+        padding-top: $padding-v-1;
+        padding-bottom: $padding-v-1;
+        background: $hero-bg;
+        padding-inline: $padding-h-1;
+    }
+
+    .content-holder {
+        perspective: 600px;
+        min-height: 600px;
+
+        min-width: min(375px, 100%);
+        max-width: 700px;
+        flex: 1 0px;
+        display: grid;
+        place-content: center;
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 4rem;
+        line-height: 4rem;
+        font-weight: 700;
+        margin-bottom: $padding-v-5;
+    }
+
+    .section-text {
+        font-size: 1.2em;
+    }
+
+    .image-holder {
+        transform-style: preserve-3d;
+        transition: 1s ease;
+        animation: 1.5s ease 0s 1 initAnimation;
+        transform: rotateY(-30deg);
+        --book-thickness: 55px;
+
+        &::before {
+            position: absolute;
+            content: " ";
+            background-color: #aaa;
+            right: -1%;
+            top: 4%;
+            height: 92%;
+            width: var(--book-thickness);
+            transform: translatex(50%) rotateY(90deg);
+            background: linear-gradient(90deg, #fff 0, #f9f9f9 5%, #fff 10%, #f9f9f9 15%, #fff 20%, #f9f9f9 25%, #fff 30%, #f9f9f9 35%, #fff 40%, #f9f9f9 45%, #fff 50%, #f9f9f9 55%, #fff 60%, #f9f9f9 65%, #fff 70%, #f9f9f9 75%, #fff 80%, #f9f9f9 85%, #fff 90%, #f9f9f9 95%, #fff 100%);
+            width: 8%;
+            transition: width 1s ease;
+        }
+
+        &::after {
+            position: absolute;
+            content: ' ';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateZ(calc(-1 * (var(--book-thickness) / 2)));
+            background-color: #ab0000;
+            border-radius: 0 2px 2px 0;
+            box-shadow: -15px 0 30px 10px #8a2be2;
+            transition: box-shadow 1s ease;
+        }
+
+        &:hover {
+            transform: rotateY(0deg);
+
+            &::before {
+                width: 0%;
+            }
+        }
+    }
+
+    .hero-image {
+        width: min(70vw, 280px);
+        aspect-ratio: 1 / 1.6;
+        transform: translateZ(calc(var(55px) / 2));
+        box-shadow: 3px 0px 20px 0px #8a2be2;
+        background: radial-gradient(at center, #373164, #001842);
+        font-weight: bold;
+        display: grid;
+        place-items: center;
+    }
+
+    .price-holder {
+        position: relative;
+        margin-bottom: $padding-v-3;
+
+        .price,
+        .discount {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
+
+        .price {
+            position: relative;
+            color: #01072b;
+            font-weight: 700;
+            background: #fff;
+            padding: .8em 1.2em .7em 1em;
+            clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+            position: relative;
+            z-index: 2;
+        }
+
+        .discount {
+            padding: .8em 1.2em .7em 2em;
+            color: #2f912f;
+            margin-left: -30px;
+            font-weight: 700;
+            background: #cccccc;
+            clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+.section-about {
+    padding-block: $padding-v-1;
+
+    .section-title {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        color: $hero-bg;
+        margin-bottom: $padding-v-3;
+    }
+
+    .about-list {
+        padding: 0;
+        list-style: none;
+
+        .about-list__item {
+            font-size: 1.2rem;
+            font-weight: 300;
+            vertical-align: middle;
+            line-height: 1.4rem;
+            margin-bottom: $padding-v-5;
+
+            strong {
+                font-weight: 600;
+            }
+
+            .text-holder {
+                display: block;
+                padding-left: 2rem;
+            }
+
+            &.verified::before {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                height: 1em;
+                width: 1em;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%234CAF50' stroke-width='2'/%3E%3Cpath d='M7 12l3 3 6-6' stroke='%234CAF50' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin-right: 0.5ch;
+                margin-top: 3px;
+            }
+
+            &.not-verified::before {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                height: 1em;
+                width: 1em;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23FF0000' stroke-width='2'/%3E%3Cpath d='M8 8l8 8M8 16l8-8' stroke='%23FF0000' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin-right: 0.5ch;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+.section-ebooks {
+    padding: $padding-v-1 0;
+    text-align: center;
+    background: $hero-bg;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+
+    .section-title {
+        font-size: 3rem;
+        padding-bottom: $padding-v-3;
+    }
+
+    .text-holder {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto $padding-v-1;
+    }
+
+    .preview-ebook-holder {
+        position: relative;
+        perspective: 4500px;
+        margin-block: 4%;
+
+        .preview-ebook {
+            width: min(50vw, 450px);
+            aspect-ratio: 5 / 7;
+            object-fit: cover;
+            transform: rotateX(65deg) rotateY(0deg) rotateZ(-38deg);
+            border-left: 3px solid #01072b;
+            border-bottom: 3px solid #01072b;
+            position: relative;
+            box-shadow: 0 0 5vw 5vw rgba(0, 0, 0, 0.4);
+            transition: border 0.5s, transform 0.5s ease;
+            margin-top: -15%;
+
+
+            &.one {
+                top: 20%;
+            }
+
+            &.two {
+                top: 10%;
+            }
+
+            &.one,
+            &.two {
+                position: absolute;
+            }
+
+            &:hover {
+                transform: rotateX(65deg) rotateY(0) rotateZ(-38deg) translate(20px, -20px);
+                border: 2px solid cyan;
+                box-shadow: 0 0 5vw 5vw rgba(0, 0, 0, 0.4), 0 0 10px 5px rgba(0, 255, 255, 0.4);
+            }
+        }
+    }
+}
+
+.section-reviews {
+    padding: $padding-v-2 0 $padding-v-0;
+
+    .section-title {
+        font-size: 3rem;
+        margin-bottom: $padding-v-2;
+        text-align: center;
+        color: $hero-bg;
+    }
+
+    .product-reviews {
+        .review-holder {
+            background: $hero-bg;
+            padding: $padding-1;
+            border-radius: 16px;
+        }
+
+        .product-review {
+            color: white;
+            max-width: 480px;
+            min-height: 180px;
+
+            .review-header {
+                vertical-align: top;
+                margin-bottom: $padding-v-5;
+
+                .review-image-holder {
+                    width: 48px;
+                    display: inline-block;
+
+                    .review-image {
+                        border-radius: 100%;
+                        display: block;
+                        max-width: 100%;
+                    }
+                }
+
+                .review-user-holder {
+                    margin-left: 16px;
+                    display: inline-block;
+
+                    address {
+                        margin-bottom: 0;
+                    }
+
+                    .review-user-name {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        font-style: italic;
+                    }
+                }
+
+                .review-rating-holder {
+                    .review-rating-value {
+                        display: none;
+                    }
+
+                    .review-rating-stars {
+                        color: orange;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            .review-text-holder {
+                .review-text {
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    padding-bottom: $padding-v-6;
+                }
+            }
+        }
+    }
+}
+
+
+.section-faq {
+    padding: $padding-v-1 0 $padding-v-0;
+    background-color: $hero-bg;
+
+    .section-title {
+        font-size: 3rem;
+        margin-bottom: $padding-v-2;
+        text-align: center;
+        color: white;
+    }
+
+    .faq {
+        max-width: 800px;
+        margin: auto;
+        padding-bottom: $padding-v-4;
+
+        .faq-item {
+            background: #001842;
+            border-radius: 8px;
+            margin-bottom: 32px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 18px;
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 1.1rem;
+            text-align: left;
+            cursor: cursor;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.35s ease;
+            background: #0b2140;
+        }
+
+        .faq-content {
+            padding: 18px;
+            color: #dddddd;
+            font-size: 1.1rem;
+        }
+
+        .chevron {
+            font-size: 20px;
+            transition: transform .3s ease;
+        }
+
+        .faq-item.active {
+            button {
+                background-color: #373164;
+            }
+
+            .chevron {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .cta-holder {
+        display: block;
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    padding: $padding-v-3 0;
+    background-color: darken($hero-bg, 2%);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+
+    a {
+        color: white !important;
+    }
+}
+
+
+@include respond(mobile) {
+    .container {
+        padding-inline: 0;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .microcopy {
+        font-size: 0.7rem;
+    }
+
+    .section-hero {
+
+        .container {
+            padding-top: $padding-v-5;
+            padding-inline: 0;
+        }
+
+        .hero-row {
+            .col-text {
+                order: 2;
+            }
+
+            .col-image {
+                order: 1;
+
+                .content-holder {
+                    min-height: 460px;
+                    margin-bottom: $padding-v-3;
+                }
+
+                .image-holder {
+                    margin-left: -30px;
+
+                    .hero-image {
+                        width: min(60vw, 280px);
+                    }
+                }
+            }
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        .section-text {
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+        }
+
+        .cta-holder {
+            text-align: center;
+        }
+    }
+
+    .section-about {
+        padding-top: $padding-v-3;
+        padding-bottom: $padding-v-6;
+
+        .section-title {
+            font-size: 1.7rem;
+            margin-bottom: $padding-v-5;
+        }
+
+        .about-list {
+            margin-bottom: $padding-v-2;
+
+            .about-list__item {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .section-ebooks {
+        padding-top: $padding-v-2;
+        padding-bottom: $padding-v-2;
+
+        .section-title {
+            font-size: 2.4rem;
+            line-height: 2.4rem;
+
+            br {
+                display: none;
+            }
+        }
+
+        .text-holder {
+            margin-bottom: $padding-v-4;
+            .section-text {
+                font-size: 1em;
+                text-align: left;
+                line-height: 1.5rem;
+    
+            }
+        }
+
+        .preview-ebook-holder {
+            margin-bottom: $padding-v-3;
+        }
+    }
+
+    .section-reviews {
+        padding-top: $padding-v-3;
+        padding-bottom: $padding-v-3;
+
+        .section-title {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        .product-reviews {
+            .review-holder {
+                margin-bottom: $padding-v-4;
+            }
+
+            .product-review {
+                min-height: auto;
+                .review-text-holder .review-text {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .section-faq {
+        padding-block: $padding-v-4;
+        padding-bottom: $padding-v-2;
+
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: $padding-v-4;
+        }
+    }
+}
