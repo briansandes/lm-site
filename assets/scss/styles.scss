@@ -101,7 +101,7 @@ body {
     margin-bottom: $padding-v-5;
 
     strong {
-        font-weight: 700;
+        font-weight: 600;
     }
 }
 
@@ -122,6 +122,7 @@ body {
     white-space: nowrap;
     display: inline-block;
     width: auto;
+    text-align: center;
 
     &:hover {
         color: $hero-bg;
@@ -135,6 +136,18 @@ body {
     display: inline-block;
     white-space: nowrap;
 }
+
+.mobile-only {
+    display: none;
+}
+
+@include respond(mobile) {
+    .mobile-only {
+        display: inline-block;
+    }
+}
+
+/* sections ------------------------------- */
 
 .section-hero {
     color: white;
@@ -259,9 +272,9 @@ body {
 }
 
 .section-about {
-    padding: $padding-v-1;
+    padding-block: $padding-v-1;
 
-    h2.section-title {
+    .section-title {
         font-size: 1.8rem;
         line-height: 1.8rem;
         color: $hero-bg;
@@ -521,6 +534,7 @@ body {
             }
         }
     }
+
     .cta-holder {
         display: block;
         text-align: center;
@@ -539,5 +553,140 @@ footer {
 
     a {
         color: white !important;
+    }
+}
+
+
+@include respond(mobile) {
+    .container {
+        padding-inline: 0;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .microcopy {
+        font-size: 0.7rem;
+    }
+
+    .section-hero {
+
+        .container {
+            padding-top: $padding-v-5;
+            padding-inline: 0;
+        }
+
+        .hero-row {
+            .col-text {
+                order: 2;
+            }
+
+            .col-image {
+                order: 1;
+
+                .content-holder {
+                    min-height: 520px;
+                }
+
+                .image-holder {
+                    margin-left: -30px;
+                }
+            }
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        .section-text {
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+        }
+
+        .cta-holder {
+            text-align: center;
+        }
+    }
+
+    .section-about {
+        padding-top: $padding-v-3;
+        padding-bottom: $padding-v-6;
+
+        .section-title {
+            font-size: 1.7rem;
+            margin-bottom: $padding-v-5;
+        }
+
+        .about-list {
+            margin-bottom: $padding-v-2;
+
+            .about-list__item {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .section-ebooks {
+        padding-top: $padding-v-2;
+        padding-bottom: $padding-v-2;
+
+        .section-title {
+            font-size: 2.4rem;
+            line-height: 2.4rem;
+
+            br {
+                display: none;
+            }
+        }
+
+        .text-holder {
+            margin-bottom: $padding-v-4;
+            .section-text {
+                font-size: 1em;
+                text-align: left;
+                line-height: 1.5rem;
+    
+            }
+        }
+
+        .preview-ebook-holder {
+            margin-bottom: $padding-v-3;
+        }
+    }
+
+    .section-reviews {
+        padding-top: $padding-v-3;
+        padding-bottom: $padding-v-3;
+
+        .section-title {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+
+        .product-reviews {
+            .review-holder {
+                margin-bottom: $padding-v-4;
+            }
+
+            .product-review {
+                min-height: auto;
+                .review-text-holder .review-text {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .section-faq {
+        padding-block: $padding-v-4;
+        padding-bottom: $padding-v-2;
+
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: $padding-v-4;
+        }
     }
 }

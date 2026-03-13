@@ -93,7 +93,8 @@
                 </div>
                 <div class="cta-holder">
                   <a href="https://pay.hotmart.com/X103318171D" target="_blank" class="cta cta-hero">
-                    Clique para adiquirir o box de eBooks agora
+                    Clique para adiquirir<br class="mobile-only"/>
+                    o box de eBooks agora
                   </a>
                   <span class="microcopy">Compra Segura | Acesso Imediato | 7 Dias de Garantia</span>
                 </div>
@@ -288,7 +289,8 @@
         <div class="row">
           <div class="col">
             <a href="https://pay.hotmart.com/X103318171D" target="_blank" class="cta cta-eboks">
-              Quero 100% de controle das minhas finanças!
+              Quero 100% de controle<br class="mobile-only"/>
+               das minhas finanças!
             </a>
           </div>
         </div>
