@@ -34,6 +34,7 @@ $hero-bg: #01072b;
     flex-wrap: wrap;
     width: 100%;
 
+    .col,
     .col-7,
     .col-6,
     .col-5,
@@ -51,7 +52,7 @@ $hero-bg: #01072b;
     .col-6 {
         width: 50%;
     }
-    
+
     .col-5 {
         width: calc(100% / 12 * 5);
     }
@@ -84,16 +85,17 @@ $hero-bg: #01072b;
 
 body {
     font-size: 16px;
-    font-family: "League Spartan", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #f0f0f0;
 }
 
 .section-title {
     font-weight: 700;
+    font-family: "League Spartan", sans-serif;
 }
 
 .section-text {
-    font-size: 1.4em;
+    font-size: 1.3em;
     line-height: 1.2em;
     font-weight: 300;
     margin-bottom: $padding-v-5;
@@ -144,10 +146,15 @@ body {
         gap: 20px;
     }
 
-    h1 {
+    .section-title {
         font-size: 4rem;
         line-height: 4rem;
         font-weight: 700;
+        margin-bottom: $padding-v-5;
+    }
+
+    .section-text {
+        font-size: 1.2em;
     }
 
     .image-holder {
@@ -235,6 +242,127 @@ body {
             clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
             position: relative;
             z-index: 1;
+        }
+    }
+}
+
+.section-about {
+    padding: $padding-v-1;
+
+    h2.section-title {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        color: $hero-bg;
+        margin-bottom: $padding-v-3;
+    }
+
+    .about-list {
+        padding: 0;
+        list-style: none;
+
+        .about-list__item {
+            font-size: 1.2rem;
+            font-weight: 300;
+            vertical-align: middle;
+            line-height: 1.4rem;
+            margin-bottom: $padding-v-5;
+
+            strong {
+                font-weight: 600;
+            }
+
+            .text-holder {
+                display: block;
+                padding-left: 2rem;
+            }
+
+            &.verified::before {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                height: 1em;
+                width: 1em;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%234CAF50' stroke-width='2'/%3E%3Cpath d='M7 12l3 3 6-6' stroke='%234CAF50' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin-right: 0.5ch;
+                margin-top: 3px;
+            }
+
+            &.not-verified::before {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                height: 1em;
+                width: 1em;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23FF0000' stroke-width='2'/%3E%3Cpath d='M8 8l8 8M8 16l8-8' stroke='%23FF0000' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin-right: 0.5ch;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+.section-ebooks {
+    padding: $padding-v-1 0;
+    text-align: center;
+    background: $hero-bg;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    place-items: center;
+
+    .section-title {
+        font-size: 3rem;
+        padding-bottom: $padding-v-3;
+    }
+
+    .text-holder {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto $padding-v-1;
+    }
+
+    .preview-ebook-holder {
+        position: relative;
+        perspective: 4500px;
+        margin-block: 4%;
+
+        .preview-ebook {
+            width: min(50vw, 450px);
+            aspect-ratio: 5 / 7;
+            object-fit: cover;
+            transform: rotateX(65deg) rotateY(0deg) rotateZ(-38deg);
+            border-left: 3px solid #01072b;
+            border-bottom: 3px solid #01072b;
+            position: relative;
+            box-shadow: 0 0 5vw 5vw rgba(0, 0, 0, 0.4);
+            transition: border 0.5s, transform 0.5s ease;
+            margin-top: -15%;
+
+
+            &.one {
+                top: 20%;
+            }
+
+            &.two {
+                top: 10%;
+            }
+
+            &.one,
+            &.two {
+                position: absolute;
+            }
+
+            &:hover {
+                transform: rotateX(65deg) rotateY(0) rotateZ(-38deg) translate(20px, -20px);
+                border: 2px solid cyan;
+                box-shadow: 0 0 5vw 5vw rgba(0, 0, 0, 0.4), 0 0 10px 5px rgba(0, 255, 255, 0.4);
+            }
         }
     }
 }

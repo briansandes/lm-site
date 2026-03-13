@@ -32,7 +32,9 @@
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <style>
     <?php include 'assets/css/styles.css'; ?>
@@ -51,7 +53,9 @@
               <!-- title -->
               <div class="title-holder">
                 <h1 class="section-title">
-                  Como organizar suas finanças sem complicação
+                  Como Organizar<br />
+                  Suas Finanças<br />
+                  Sem Complicação
                 </h1>
               </div>
               <!-- title -->
@@ -88,7 +92,7 @@
                   <label class="discount">30% OFF</label>
                 </div>
                 <div class="cta-holder">
-                  <a href="#" target="_blank" class="cta cta-hero">
+                  <a href="https://pay.hotmart.com/X103318171D" target="_blank" class="cta cta-hero">
                     Clique para adiquirir o box de eBooks agora
                   </a>
                 </div>
@@ -127,59 +131,38 @@
 
               <!-- list -->
               <ul class="about-list">
-                <li class="about-list__item">
-                  Direto ao ponto — <strong>sem informação inútil.</strong>
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    <strong>Direto ao ponto</strong> — sem informação inútil.
+                  </span>
                 </li>
-                <li class="about-list__item">
-                  Guias visuais — <strong>tornam tudo simples de entender.</strong>
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    <strong>Guias visuais</strong> — tornam tudo simples de entender.
+                  </span>
                 </li>
-                <li class="about-list__item">
-                  Exemplos do dia a dia — <strong>mostram como aplicar na vida real.</strong>
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    <strong>Exemplos do dia a dia</strong> — mostram como aplicar na vida real.
+                  </span>
                 </li>
-                <li class="about-list__item">
-                  Planilhas e ferramentas práticas — <strong>para acompanhar seu dinheiro na prática.</strong>
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    <strong>Planilhas e ferramentas</strong> — para acompanhar seu dinheiro na prática.
+                  </span>
                 </li>
-                <li class="about-list__item">
-                  Conteúdo objetivo — <strong>para ler em uma tarde e começar a aplicar imediatamente. 💰</strong>
-                </li>
-              </ul>
-              <!-- list -->
-            </div>
-          </div>
-          <!-- col -->
-
-
-          <!-- col -->
-          <div class="col col-4">
-            <div class="content-holder">
-              <!-- title -->
-              <h2 class="section-title">
-                Mas Este Box de eBooks Não é Para Você Se…
-              </h2>
-              <!-- title -->
-
-              <!-- list -->
-              <ul class="about-list">
-                <li class="about-list__item">
-                  Você não quer mudar seus hábitos financeiros.
-                </li>
-                <li class="about-list__item">
-                  Prefere continuar sem saber para onde seu dinheiro está indo.
-                </li>
-                <li class="about-list__item">
-                  Acha que organizar as finanças não faz diferença na sua vida.
-                </li>
-                <li class="about-list__item">
-                  Está confortável em viver sempre no limite do orçamento.
-                </li>
-                <li class="about-list__item">
-                  Não tem interesse em ter mais controle e tranquilidade com dinheiro. 💰
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    <strong>Conteúdo objetivo</strong> — para ler em uma tarde e começar a aplicar imediatamente. 📖
+                  </span>
                 </li>
               </ul>
               <!-- list -->
             </div>
           </div>
           <!-- col -->
+
+
 
 
           <!-- col -->
@@ -193,20 +176,30 @@
 
               <!-- list -->
               <ul class="about-list">
-                <li class="about-list__item">
-                  Por que saber exatamente para onde seu dinheiro vai muda tudo.
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    Por que <strong>saber exatamente para onde seu dinheiro vai</strong> muda tudo.
+                  </span>
                 </li>
-                <li class="about-list__item">
-                  O erro mais comum que faz as pessoas perderem o controle das finanças.
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    O erro mais comum que faz as pessoas <strong>perderem o controle</strong> das finanças.
+                  </span>
                 </li>
-                <li class="about-list__item">
-                  A regra simples que ajuda você a organizar gastos sem complicação.
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    A regra simples que ajuda você a <strong>organizar gastos sem complicação</strong>.
+                  </span>
                 </li>
-                <li class="about-list__item">
-                  Como se livrar das dívidas com um plano claro e realista.
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    Como <strong>se livrar das dívidas com um plano claro e realista</strong>.
+                  </span>
                 </li>
-                <li class="about-list__item">
-                  A tabela prática que ajuda você a visualizar e planejar seu dinheiro mês a mês. 💰
+                <li class="about-list__item verified">
+                  <span class="text-holder">
+                    A tabela prática que ajuda você a <strong>visualizar e planejar seu dinheiro mês a mês</strong>. 💰
+                  </span>
                 </li>
               </ul>
               <!-- list -->
@@ -214,7 +207,89 @@
           </div>
           <!-- col -->
 
+          <!-- col -->
+          <div class="col col-4">
+            <div class="content-holder">
+              <!-- title -->
+              <h2 class="section-title">
+                Mas Este Box de eBooks Não é Para Você Se…
+              </h2>
+              <!-- title -->
 
+              <!-- list -->
+              <ul class="about-list">
+                <li class="about-list__item not-verified">
+                  <span class="text-holder">
+                    Você <strong>não quer mudar seus hábitos financeiros</strong>.
+                  </span>
+                </li>
+                <li class="about-list__item not-verified">
+                  <span class="text-holder">
+                    Prefere <strong>continuar sem saber para onde seu dinheiro está indo</strong>.
+                  </span>
+                </li>
+                <li class="about-list__item not-verified">
+                  <span class="text-holder">
+                    Acha que <strong>organizar as finanças não faz diferença na sua vida</strong>.
+                  </span>
+                </li>
+                <li class="about-list__item not-verified">
+                  <span class="text-holder">
+                    Está confortável em <strong>viver sempre no limite do orçamento</strong>.
+                  </span>
+                </li>
+                <li class="about-list__item not-verified">
+                  <span class="text-holder">
+                    Não tem interesse em <strong>ter mais controle e tranquilidade com dinheiro</strong>. 🚫
+                  </span>
+                </li>
+              </ul>
+              <!-- list -->
+            </div>
+          </div>
+          <!-- col -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section-ebooks">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3 class="section-title">
+              Seu problema não é falta de dinheiro,<br />
+              é falta de clareza
+            </h3>
+            <div class="text-holder">
+              <p class="section-text">
+                <strong>Sem clareza financeira, você vive de impulso, parcelas e juros.<br />
+                  Este box de eBooks mostra o caminho mais simples para assumir o controle. 💰</strong>. 💰
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="preview-ebook-holder">
+              <img src="assets/img/ebooks/ebook-pagina-4.jpg" alt="Preview do eBook" class="preview-ebook one"
+                loading="lazy" />
+
+              <img src="assets/img/ebooks/ebook-pagina-2.jpg" alt="Preview do eBook" class="preview-ebook two"
+                loading="lazy" />
+
+              <img src="assets/img/ebooks/ebook-pagina-1.jpg" alt="Preview do eBook" class="preview-ebook three"
+                loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a href="https://pay.hotmart.com/X103318171D" target="_blank" class="cta cta-eboks">
+              Quero 100% de controle das minhas finanças!
+            </a>
+          </div>
         </div>
       </div>
     </section>
