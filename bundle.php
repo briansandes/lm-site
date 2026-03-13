@@ -37,7 +37,7 @@
     rel="stylesheet">
 
   <style>
-    <?php include 'assets/css/styles.css'; ?>
+    <?php include 'assets/css/styles.css';echo PHP_EOL; ?>
   </style>
 </head>
 
@@ -87,13 +87,14 @@
 
               <!-- cta -->
               <div class="cta-area-holder">
+                <span>Por apenas</span>
                 <div class="price-holder">
                   <label class="price">R$ 68,70</label>
                   <label class="discount">30% OFF</label>
                 </div>
                 <div class="cta-holder">
                   <a href="https://pay.hotmart.com/X103318171D" target="_blank" class="cta cta-hero">
-                    Clique para adiquirir<br class="mobile-only"/>
+                    Clique para adiquirir<br class="mobile-only" />
                     o box de eBooks agora
                   </a>
                   <span class="microcopy">Compra Segura | Acesso Imediato | 7 Dias de Garantia</span>
@@ -108,8 +109,10 @@
           <div class="col-6 col-image">
             <div class="content-holder">
               <div class="image-holder">
-                <img src="assets/img/box-5-ebooks.png" class="hero-image" alt="Finanças Descomplicadas"
-                  title="Finanças Descomplicaras" />
+                <!-- <img src="assets/img/box-5-ebooks.png" class="hero-image" alt="Finanças Descomplicadas"
+                  title="Finanças Descomplicadas" /> -->
+                  <img src="data:image/png;base64,<?php echo base64_encode(file_get_contents('assets/img/box-5-ebooks.png')); ?>" class="hero-image" alt="Finanças Descomplicadas"
+                  title="Finanças Descomplicadas" />
               </div>
             </div>
           </div>
@@ -265,7 +268,7 @@
             <div class="text-holder">
               <p class="section-text">
                 <strong>Sem clareza financeira, você vive de impulso, parcelas e juros.<br />
-                  Este box de eBooks mostra o caminho mais simples para assumir o controle. 💰</strong>. 💰
+                  Este box de eBooks mostra o caminho mais simples para assumir o controle</strong>. 💰
               </p>
             </div>
           </div>
@@ -289,8 +292,8 @@
         <div class="row">
           <div class="col">
             <a href="https://pay.hotmart.com/X103318171D" target="_blank" class="cta cta-eboks">
-              Quero 100% de controle<br class="mobile-only"/>
-               das minhas finanças!
+              Quero 100% de controle<br class="mobile-only" />
+              das minhas finanças!
             </a>
           </div>
         </div>
@@ -507,7 +510,7 @@
         <div class="row">
           <div class="col">
             <div class="cta-holder">
-              <a href="https://pay.hotmart.com/X103318171D" class="cta cta-faq">
+              <a href="https://pay.hotmart.com/X103318171D" target="_blank" class="cta cta-faq">
                 Adiquira agora o box completo!
               </a>
               <span class="microcopy">Compra Segura | Acesso Imediato | 7 Dias de Garantia</span>
@@ -558,14 +561,14 @@
           answer.style.height = answer.scrollHeight + "px"
         }
 
+        answer.addEventListener("transitionend", () => {
+          if (item.classList.contains("active")) {
+            answer.style.height = "auto"
+          }
+        })
       })
 
     });
-    answer.addEventListener("transitionend", () => {
-      if (item.classList.contains("active")) {
-        answer.style.height = "auto"
-      }
-    })
   </script>
 </body>
 

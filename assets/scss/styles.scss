@@ -586,7 +586,8 @@ footer {
                 order: 1;
 
                 .content-holder {
-                    min-height: 520px;
+                    min-height: 480px;
+                    margin-bottom: $padding-v-3;
                 }
 
                 .image-holder {
