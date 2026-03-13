@@ -95,6 +95,7 @@
                   <a href="https://pay.hotmart.com/X103318171D" target="_blank" class="cta cta-hero">
                     Clique para adiquirir o box de eBooks agora
                   </a>
+                  <span class="microcopy">Compra Segura | Acesso Imediato | 7 Dias de Garantia</span>
                 </div>
               </div>
               <!-- cta -->
@@ -412,55 +413,158 @@
       </div>
     </section>
 
+    <section class="section-faq">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h5 class="section-title">Perguntas frequentes</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="faq">
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Como esses eBooks são melhores do que os conteúdos gratuitos por aí?
+                  <span class="chevron">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-content">
+                    Conteúdos gratuitos normalmente entregam pedaços soltos de informação.
+                    Este box de eBooks reúne <strong>tudo em um único lugar</strong>, de forma organizada e
+                    direta.<br />
+                    O que levaria <strong>semanas ou meses para juntar sozinho</strong>, você aprende em uma tarde.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Eu já li sobre finanças antes, isso ainda vai me ajudar?
+                  <span class="chevron">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-content">
+                    Sim. Mesmo quem já consumiu conteúdo sobre finanças costuma ter
+                    <strong>informações espalhadas e sem um método claro</strong>.
+                    Aqui você encontra um <strong>caminho simples e estruturado</strong> para organizar sua vida
+                    financeira de verdade.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Isso é básico demais ou avançado demais para mim?
+                  <span class="chevron">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-content">
+                    O material foi feito para ser <strong>simples de entender e prático de aplicar</strong>,
+                    mesmo que você esteja começando agora.
+                    Mas também traz <strong>estratégias que muita gente nunca aprendeu</strong>,
+                    mesmo depois de anos lidando com dinheiro.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Eu acho livros chatos — vou conseguir terminar isso?
+                  <span class="chevron">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-content">
+                    Os eBooks são <strong>curtos, diretos e focados no que realmente importa</strong>.
+                    Nada de teoria desnecessária — você vai ler
+                    <strong>aplicando imediatamente na sua própria vida financeira</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Eu não tenho tempo para ler um livro inteiro — quanto tempo leva?
+                  <span class="chevron">⌄</span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-content">
+                    A ideia é justamente economizar seu tempo.
+                    Você pode absorver os conceitos principais
+                    <strong>em poucas horas de leitura</strong>, e começar a organizar suas
+                    finanças no mesmo dia.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="cta-holder">
+              <a href="https://pay.hotmart.com/X103318171D" class="cta cta-faq">
+                Adiquira agora o box completo!
+              </a>
+              <span class="microcopy">Compra Segura | Acesso Imediato | 7 Dias de Garantia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section-"></section>
 
   </main>
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-mobile-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="placa placa-1">
-              <p>
-                Lógica Macaquista<br />
-                LM PRODUÇÕES
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="placa placa-2">
-              <a href="https://hotmart.com/pt-br/legal/termos-de-uso" target="_blank">
-                Termos de uso
-              </a><br />
-              <a href="mailto:contato@logicamacaquista.com.br" target="_blank">
-                Contato
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="placa placa-3">
-              <h6 class="text-center">SIGA NOS</h6>
-              <div class="social-icons">
-                <a href="https://www.instagram.com/logica.macaquista/" target="_blank">
-                  <img src="assets/img/icon-instagram.webp" alt="https://www.instagram.com/logica.macaquista/"
-                    title="Instagram @logica.macaquista" />
-                </a>
-                <a href="https://www.tiktok.com/@logica.macaquista" target="_blank">
-                  <img src="assets/img/icon-tiktok.webp" alt="https://www.tiktok.com/@logica.macaquista"
-                    title="TikTok @logica.macaquista" />
-                </a>
-                <a href="https://www.youtube.com/@logica.macaquista" target="_blank">
-                  <img src="assets/img/icon-youtube.png" alt="https://www.youtube.com/@logica.macaquista"
-                    title="YouTube @logica.macaquista" />
-                </a>
-              </div>
-            </div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>
+            <strong>LM PRODUÇÕES</strong>
+          </p>
+          <p>
+            <a href="https://hotmart.com/pt-br/legal/termos-de-uso" target="_blank">
+              Termos de uso
+            </a> |
+            <a href="mailto:contato@logicamacaquista.com.br" target="_blank">
+              Contato
+            </a>
+          </p>
         </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll(".faq-question").forEach(btn => {
+
+      btn.addEventListener("click", () => {
+
+        const item = btn.parentElement
+        const answer = item.querySelector(".faq-answer")
+
+        if (item.classList.contains("active")) {
+          answer.style.height = answer.scrollHeight + "px"
+          requestAnimationFrame(() => answer.style.height = "0px")
+          item.classList.remove("active")
+        } else {
+          item.classList.add("active")
+          answer.style.height = answer.scrollHeight + "px"
+        }
+
+      })
+
+    });
+    answer.addEventListener("transitionend", () => {
+      if (item.classList.contains("active")) {
+        answer.style.height = "auto"
+      }
+    })
+  </script>
 </body>
 
 </html>
