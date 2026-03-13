@@ -586,12 +586,16 @@ footer {
                 order: 1;
 
                 .content-holder {
-                    min-height: 480px;
+                    min-height: 460px;
                     margin-bottom: $padding-v-3;
                 }
 
                 .image-holder {
                     margin-left: -30px;
+
+                    .hero-image {
+                        width: min(60vw, 280px);
+                    }
                 }
             }
         }
